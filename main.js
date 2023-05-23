@@ -1,5 +1,12 @@
 import './style.scss';
 import curriculum from './data/curriculum.json';
+import dayjs from 'dayjs';
+
+const _startDay = dayjs('2023-05-23');
+const _newDay = _startDay.add(9, 'day');
+console.log(_startDay)
+	
+
 
 const title = 'Cascading Style Sheets';
 
@@ -19,6 +26,10 @@ const getModuleTitles = () => {
 document.querySelector('#app').innerHTML = `
 <h1>${title}</h1>
 <div class="modules">
+	${_startDay.format('YYYY-MM-DD')}
+	<hr/>
+	${_newDay.format('YYYY-MM-DD')}
+	<hr/>
 	${getModuleTitles()}
 </div>
 	<div class="content">
