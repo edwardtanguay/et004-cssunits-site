@@ -1,24 +1,21 @@
 import './style.scss';
-import curriculum from './data/curriculum.json';
+import skills from './data/skills.json';
 import dayjs from 'dayjs';
 
 const _startDay = dayjs('2023-05-23');
-const _newDay = _startDay.add(365, 'day');
-console.log(_startDay)
-	
-
+const _newDay = _startDay.add(21, 'day');
 
 const title = 'Cascading Style Sheets';
 
-const getModuleTitles = () => {
+const getModuleSkills = () => {
 	// return curriculum.modules[1].submodules[2].title;
 	let r = '';
 
-	r += '<ul>'; 
-	for (const module of curriculum.modules) {
-		r += `<li>${module.title} (${module.idCode})</li>`
+	r += '<ul>';
+	for (const skill of skills) {
+		r += `<li>${skill.name}</li>`;
 	}
-	r += '</ul>'
+	r += '</ul>';
 
 	return r;
 };
@@ -26,11 +23,13 @@ const getModuleTitles = () => {
 document.querySelector('#app').innerHTML = `
 <h1>${title}</h1>
 <div class="modules">
-	${_startDay.format('YYYY-MM-DD')}
-	<hr/>
-	${_newDay.format('YYYY-MM-DD')}
-	<hr/>
-	${getModuleTitles()}
+	<h2>day.js demo</h2>
+	<ul>
+		<li>${_startDay.format('YYYY-MM-DD')}</li>
+		<li>${_newDay.format('YYYY-MM-DD')}</li>
+	</ul>
+	<h2>Web developer skills (from JSON file)</h2>
+	${getModuleSkills()}
 </div>
 	<div class="content">
 		<article>
