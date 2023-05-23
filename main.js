@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 
 document.querySelector('#app').innerHTML = `
 <h1>Cascading Style Sheets</h1>
