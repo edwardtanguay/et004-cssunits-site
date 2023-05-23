@@ -1,10 +1,10 @@
 import './style.scss';
 
-const html = ``;
+const title = 'Cascading Style Sheets';
 
 document.querySelector('#app').innerHTML = `
-<h1>Cascading Style Sheets</h1>
-	<section>
+<h1>${title}</h1>
+	<div class="content">
 		<article>
 			<h2>Syntax</h2>
 			<p>CSS has a simple syntax and uses a number of English keywords to specify the names of various style
@@ -33,5 +33,5 @@ document.querySelector('#app').innerHTML = `
 				In the above example, the declaration in the style attribute overrides the one in the style element
 				because it has a higher specificity, and thus, the paragraph appears green.</p>
 		</article>
-	</section>
+	</div>	
 `;
