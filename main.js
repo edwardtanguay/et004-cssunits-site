@@ -4,8 +4,18 @@ import curriculum from './data/curriculum.json';
 const title = 'Cascading Style Sheets';
 
 const getModuleTitles = () => {
-	return 'nnn';
-}
+	// return curriculum.modules[1].submodules[2].title;
+	let r = '';
+
+	r += '<ul>'; 
+	for (const module of curriculum.modules) {
+		console.log(module)
+		r += `<li>${module.title} (${module.idCode})</li>`
+	}
+	r += '</ul>'
+
+	return r;
+};
 
 document.querySelector('#app').innerHTML = `
 <h1>${title}</h1>
