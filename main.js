@@ -3,7 +3,7 @@ import curriculum from './data/curriculum.json';
 import dayjs from 'dayjs';
 
 const _startDay = dayjs('2023-05-23');
-const _newDay = _startDay.add(9, 'day');
+const _newDay = _startDay.add(365, 'day');
 console.log(_startDay)
 	
 
