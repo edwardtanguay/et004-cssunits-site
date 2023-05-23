@@ -9,7 +9,6 @@ const getModuleTitles = () => {
 
 	r += '<ul>'; 
 	for (const module of curriculum.modules) {
-		console.log(module)
 		r += `<li>${module.title} (${module.idCode})</li>`
 	}
 	r += '</ul>'
