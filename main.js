@@ -1,9 +1,17 @@
 import './style.scss';
+import curriculum from './data/curriculum.json';
 
 const title = 'Cascading Style Sheets';
 
+const getModuleTitles = () => {
+	return 'nnn';
+}
+
 document.querySelector('#app').innerHTML = `
 <h1>${title}</h1>
+<div class="modules">
+	${getModuleTitles()}
+</div>
 	<div class="content">
 		<article>
 			<h2>Syntax</h2>

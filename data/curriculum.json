@@ -1,0 +1,1901 @@
+{
+	"courseName": "WD23-D04",
+	"modules": [
+		{
+			"orderNumber": 1,
+			"idCode": "bdl",
+			"title": "Basic Digital Literacy",
+			"submodules": [
+				{
+					"idCode": "webdev",
+					"title": "WebDev",
+					"days": [
+						{
+							"title": "Laptop setup - day 1 of 2",
+							"bulkCurriculum": "\"Course intro presentation (with PM)\n- Technical setup of the laptops \n- Web Dev curriculum overview\"\n\"Intro to Linux\n- History, from Unix to Linus \n- Distributions    \n- Desktop Environments\"\n\"Web Development\n- What is Web Development\n- Frontend, Backend, Fullstack\n- Markup languages & programming languages\"",
+							"instructionItems": [
+								{
+									"id": "4b9e6d84-d82c-4a7c-b4c3-883d3aabaa92",
+									"kind": "task",
+									"title": "Set up laptops for class",
+									"body": "- make sure laptop works\n\t- fix any hardware problems (monitor, mouse, crashing, etc.)\n\t\t- if too difficult, delegate to IT services\n\t- boot up and log in\n- install Slack and join the WD23-D04 workspace\n- install necessary software\n\t- install [Node](https://nodejs.org/en/download)\n\t- install [Visual Studio Code](https://code.visualstudio.com/download)\n- join class organization\n\t- get [GitHub account](https://github.com)\n\t- get invited to class repository and confirm\n- set up [course website](https://github.com/WD23-D04/WD23-D04-Course-Site)\n\t- go to your projects directory\n\t- `git clone git@github.com:WD23-D04/WD23-D04-Course-Site.git`\n\t- `cd WD23-D04-Course-Site`\n\t- `code .`\n\t- open VSCode terminal\n\t- `npm i` - installs all needed packages for the website\n\t- `npm run dev` - starts the website in your browser, nnn##formdaddcontent"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "viewing",
+					"title": "Viewing & navigating / creating & manipulating",
+					"days": [
+						{
+							"id": "3ac3a134-e214-11ed-b5ea-0242ac120002",
+							"title": "Laptop setup - day 2 of 2",
+							"bulkCurriculum": "\"Introduction\n- The terminal prompt line\"\n\"Quick overview of paths in the a unix filesystem:\n- The 'pwd' command\n- The '/' folder\n- The home folder and `~` shortcut\"\n\"Moving around\n- The `cd` command\n- Absolute paths (beginning with `/`)\n- Relative paths: the `..` shortcut, navigating into sub folders\n- The last directory shortcut: `cd -`\"\n\"Reading directories\n- The `ls` command\n- List directories and files: `ls -l`\n- Showing hidden files: `ls -a` flag\n- Combining flags `ls -la`\n- The `ll` shortcut\"\n\"Reading files\n- The 'less' command\n- The current directory shortcut: '.'\"\n\"Getting help\n- The `man` command\n- The `help` command\"\n\"Introduction\n- Organizing our files and folders\"\n\"Creating Directories & files\n- The `mkdir` command\n- The `touch` command\n- `nano` text editor\"\n\"Basic Authoring (Markdown)\n- Text (bold, italic)\n- Quotes\n- Headlines\n- Lists\n- Preformatted text\n- Markdown documentation\"\n\"Introduction\n- The terminal cheat sheet\"\n\"Copying\n- The `cp` command\n- Copying a directory with `cp -r`\n- Copying multiple paths into one location\n- Using the `*` wildcard to copy the contents of a dir\"\n\"Deleting\n- The `rm` command\n- Removing directories with `rm -r`\n- Removing directories with `rmdir`\n- Force removing with `rm -f`\n- Combining flags `rm -rf`\"\n\"Moving & Renaming\n- The `mv` command\n- Renaming with `mv`\"",
+							"instructionItems": [
+								{
+									"id": "4b9e6d84-d82c-4a7c-b4c3-883d3aabaa92",
+									"kind": "task",
+									"title": "Set up laptops for class",
+									"body": "- make sure laptop works\n\t- fix any hardware problems (monitor, mouse, crashing, etc.)\n\t\t- if too difficult, delegate to IT services\n\t- boot up and log in\n- install Slack and join the WD23-D04 workspace\n- install necessary software\n\t- install [Node](https://nodejs.org/en/download)\n\t- install [Visual Studio Code](https://code.visualstudio.com/download)\n- join class organization\n\t- get [GitHub account](https://github.com)\n\t- get invited to class repository and confirm\n- set up [course website](https://github.com/WD23-D04/WD23-D04-Course-Site)\n\t- go to your projects directory\n\t- `git clone git@github.com:WD23-D04/WD23-D04-Course-Site.git`\n\t- `cd WD23-D04-Course-Site`\n\t- `code .`\n\t- open VSCode terminal\n\t- `npm i` - installs all needed packages for the website\n\t- `npm run dev` - starts the website in your browser, nnn##formdaddcontent"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "install",
+					"title": "Installing",
+					"days": [
+						{
+							"title": "Web development and course overview",
+							"bulkCurriculum": "Introduction: Package managers (npm, apt)\n\"Using `apt`\n- Using the `sudo` command to allow installation\n- Updating package list with `sudo apt update`\n- Installing with `sudo apt install <package name>`\n- Clearing unnecessary files with `sudo apt autoremove`\n- Uninstalling with `sudo apt remove <package name>`\"\n\"Using `npm`\n- Installing packages globally with `npm install -g <package name>`\n- Using `npm list` to see installed packages and their dependencies\n- Uninstalling with `npm uninstall -g <package name>`\n- Updating using `nvm install <version_number>` and `nvm install --lts` (nvm documentation)\n  - Side note: what does \"\"LTS\"\" mean in versions\n- Setting the version used by default `nvm alias default <version_number>`  \"",
+							"instructionItems": [
+								{
+									"id": "6080d3c7-e0b6-4dfa-8bdc-aa34cde64fe1",
+									"kind": "explanation",
+									"title": "Overview of the web development industry",
+									"body": "- review this mind map describing the three areas of web development: frontend, backend, and DevOps\n\t- [Overview of modern web development](https://coggle.it/diagram/ZE-oXwAjwnrf-l8P/t/web-development): what tools, frameworks and languages are used by modern web developers and which are taught in the DCI curriculum?\n\t- compare this to what companies generally require for frontend React jobs: [https://jobs.tanguay.eu](https://jobs.tanguay.eu)"
+								},
+								{
+									"id": "726a2d5e-d242-4204-bacd-18f3ed7259bc",
+									"kind": "explanation",
+									"title": "Overview of course and course website",
+									"body": "- read through this [overview of our course](http://localhost:3500/courseinfo)"
+								}
+							],
+							"facts": [
+								{
+									"id": "FHdN3E",
+									"front": "What are the three areas of web development that you can work in?",
+									"back": "frontend, backend and DevOps",
+									"tags": "webDevelopment"
+								},
+								{
+									"id": "0JxM70",
+									"front": "What is another name for a developer who works in both frontend and backend?",
+									"back": "a fullstack developer",
+									"tags": "webDevelopment"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "version",
+					"title": "Versioning",
+					"days": [
+						{
+							"title": "Linux basics",
+							"bulkCurriculum": "\"Introduction\n- Version Control Systems (VCS)\"\n\"Initializing\n- The `git` program\n- Starting a repository with `git init`\n- The `.git` folder\"\n\"Basic workflow\n- Checking the status with `git status`\n- Staging files with `git add`\n- Using the `.` shortcut to add all files\n- Creating a commit with `git commit`\n- Viewing the history with `git log`\n- Quick commits with `git commit -am <message>`\"",
+							"instructionItems": [
+								{
+									"id": "726a2d5e-d242-4204-bacd-18f3ed7259bc",
+									"kind": "explanation",
+									"title": "Short history of Linux",
+									"body": "- (see list below)"
+								},
+								{
+									"id": "726a2d5e-d242-4204-bacd-18f3ed7259bc",
+									"kind": "liveCoding",
+									"title": "Basic Linux commands",
+									"body": "- (see list below)"
+								}
+							],
+							"facts": [
+								{
+									"id": "VJc7q8",
+									"front": "What operating system was Linux based on, who invented it and when?",
+									"back": "UNIX, 60s and 70s by Dennis Ritchie and Ken Thompson",
+									"tags": "linuxHistory"
+								},
+								{
+									"id": "MueU6W",
+									"front": "When was Linux created and by whom?",
+									"back": "by Linus Torvalds in 1991",
+									"tags": "linuxHistory"
+								},
+								{
+									"id": "22oEGz",
+									"front": "What are the main distributions of Linux today?",
+									"back": "- Debian based\n\t- **Debian** (1993)\n\t\t- popular in server space\n\t\t- two package managers, apt and aptitude\n\t\t\t- apt was part of Debian’s .deb package; however, it was updated to work with the RPM Package Manager.\n\t\t\t- aptitude is a front-end tool\n\t\t- dpkg [DEE-package]\n\t- **Ubuntu** (2003)\n\t\t- most popular Linux distribution today\n\t\t- uses apt package manager\n\t\t- has a lot more drivers than Debian\n\t\t- Debian and Ubuntu are similar\n\t\t\t- Debian more of a server distribution\n\t\t\t- Ubuntu more of a personal laptop distribution\n\t- **Mint** (2006)\n\t\t- based on Ubuntu\n\t\t- started out with pre-installed multimedia codecs and proprietary drivers\n\t\t- good for beginners\n\t- *elementary OS* (2011)\n\t\t- promotes itself as a \"thoughtful, capable, and ethical\" replacement to macOS and Windows and has a pay-what-you-want model\n\t\t- desktop environment: Pantheon\n\t- *Kali* (2013)\n\t\t- designed for digital forensics and penetration testing\n\t\t- primary tool used by ethical hackers\n\t\t- allows you to test networks to see if they're vulnerable to outside attacks\n- RPM based\n\t- **RedHat** (1995)\n\t\t- known as RHEL (RedHat Enterprise Linux)\n\t\t- created the rpm package format \n\t\t- uses yum\n\t\t\t- RPM is autonomous and utilizes its own database to keep information about the packages on the system\n\t\t\t- YUM is a front-end utility that uses the RPM package manager for package management\n\t- **Fedora** (2003)\n\t\t- uses newer technology and packages from the open source world than RHEL\n\t\t- uses yum package manager as does RHEL\n\t\t- Fedora releases often while CentOS is more stable\n\t\t- **suited for workstation applications and non-production servers**\n\t\t- every six months a version like Ubuntu\n\t\t- DNF package manager\n\t- **CentOS** (2004)\n\t\t- functionally compatible with RHEL\t\n\t\t- focuses on the stability and robustness\n\t\t- used when you need a more stable system that requires the RHEL’s feature set\n\t\t- its successor is Rocky Linux\n\t\t- on CentOS you'll find older packages, on Fedora, typically new ones\n\t\t- **on December 8, 2020, Red Hat announced that development of CentOS Linux would be discontinued**\n\t- *Suse Linux* (1994)\n\t\t- known for its YaST configuration tool\n\t\t- known for the KDE desktop and stability\n\t\t- for package management uses zypper and its graphical fronted, the Yast software center\n\t\t- 2003 Novell bought Suse\n\t\t- 2005 the openSUSE Project\n\t\t\t- Zypper package manager\n\t\t- **over time, SuSE Linux incorporated many aspects of Red Hat Linux, such as its RPM Package Manager and its file structure**\n\t- **Rocky Linux** (2021)\n\t\t- complete binary-compatible release using the Red Hat Enterprise Linux (RHEL) operating system source code\n\t\t- aim is to provide a community-supported, production-grade enterprise operating\n\t\t- Rocky Linux is considered the unofficial successor to CentOS, a fork of RHEL\n\t\t- Rocky Linux has no corporate backing, while Alma is controlled by the CloudLinux people\n\t- *AlmaLinux* (2021)\n\t\t- AlmaLinux and Rocky Linux are the two brightest shining stars since CentOS ceded its position as a reliable RHEL-based server operating system\n\t\t- nonprofit\n\t\t- first version February 2021\n\t\t- totally compatible with RedHat\n- other distributions\n\t- *Slackware* (1992)\n\t\t- oldest Linux distribution in use today\n\t\t- does not have a package manager and all the software is compiled by the system administrator or normal users of the system\n\t\t- packages are simply source code\n\t\t- if you really want to learn a lot about how Linux really works, use Slackware\n\t- *FreeBSD* (1993)\n\t\t- offered at DigitalOcean\n\t\t- FreeBSD has similarities with Linux, with two major differences in scope and licensing: FreeBSD maintains a complete system, i.e. the project delivers a kernel, device drivers, userland utilities, and documentation, as opposed to Linux only delivering a kernel and drivers, and relying on third-parties for system software\n\t\t- pkg package management system\n\t\t- much of FreeBSD's codebase has become an integral part of other operating systems such as Darwin (the basis for macOS)\n\t\t\t- and the system software for the PlayStation \n\t- *Gentoo* (2002)\n\t\t- based on the portage package management system\n\t\t- can be difficult to install \n\t\t\t- advantage of such an approach is that the software is built for the specific hardware that it will be running on\n\t- **Arch** (2002)\n\t\t- default installation is a minimal base system, configured by the user to only add what is purposely required\n\t\t- uses pkg.tar.xz packages and has it's own **package manager called pacman**\n\t\t- does not come with a graphical installer and the whole installation process is done via a terminal\n\t\t- main philosophy behind Arch is KISS \n\t\t- makes few assumptions about how you want your system to be configured\n\t\t\t- Arch starts form a very neutral place\n\t\t\t- this makes the installation process confusing\n\t\t- has rolling release so there are no large versions\n\t\t- uses systemd system management framework\n\t\t- installation\n\t\t\t- can choose template, e.g. server or desktop\n\t\t\t- go to https://archlinux.org/download\n\t\t\t- download image\n\t\t\t- virtual box\n\t\t\t- it immediatly goes to root user\n\t\t\t- `archinstall` is easier\n\t\t\t- asks many questions, e.g. file system: ext4\n\t\t\t- leave root password blank to disable account\n\t\t\t- provide name for superuser account\n\t\t\t- choose desktop\n\t\t\t- linux kernel\n\t\t\t- poweroff\n\t\t- using after installation\n\t\t\t- `sudo pacman -Syu` = update system\n\t\t\t- you can install groups: https://archlinux.org/groups\n\t\t- see the [Wiki entry for principles](https://wiki.archlinux.org/title/Arch_Linux#Principles)\n\t\t- targeted at power users\n\t- *Alpine* (2005)\n\t\t- designed to be small, simple and secure\n\t\t- uses musl and BusyBox instead of the more commonly used Glibc and GNU Core Utilities\n\t\t- because of its small size, it is commonly used in containers providing quick boot-up times\n\t- *Manjaro* (2011)\n\t\t- based on the Arch Linux operating system that has a focus on user-friendliness \n\t\t- uses Pacman\n\t\t- developed mainly in Austria, France and Germany\n\t\t- easier to use\n\t- *EndeavourOS* (2019)\n\t\t- based on Arch Linux\n\t\t- seen as a workstation\n\t\t- features the graphical Calamares installer capable of installing the Xfce, Budgie, Cinnamon, GNOME, i3, KDE Plasma 5, LXQt, and MATE desktop environments\n\t\t- not as mature as other distributions\t\t\t",
+									"tags": "linuxHistory"
+								},
+								{
+									"id": "5sGl1d",
+									"front": "What are the most common directories that you will use on your Ubuntu system?",
+									"back": "- probably **home** the most since this is where your personal files are, then **bin** and **usr/bin** for installed packages, **etc** for configuration files, and **var** for logs or e.g. websites on hosted computers **var/www***\n\t- **bin** binaries\n\t- **boot** contains initial RAM disk\n\t- **dev** files that refer to devices\n\t- **etc** configuration files\n\t- **home** user directories\n\t- **lib** libraries\n\t- **media** removable media\n\t\t- Ubuntu: empty\n\t- **mnt** other media like hard drives\n\t\t- Ubuntu: empty\n\t- **opt** optional packages\n\t- **proc** information about kernel and processes \n\t\t- many tools read from here\n\t- **root** home folder for root user\n\t- **run** info about running processes\n\t\t- lock files and process ids\n\t- **sbin** system binaries\n\t- **srv** place for info to share with other systems \n\t\t- FTP, NFS (Network File System)\n\t- **sys** lists of disks, devices\n\t- **tmp** temp info\n\t- **usr** for system binaries inc e.g. usr/bin, usr/local, usr/sbin\n\t- **var** files that vary often but are not temporary\n\t\t- e.g. logs",
+									"tags": "linuxHistory"
+								},
+								{
+									"id": "OnRDvT",
+									"front": "How to find out what directory you are currently in?",
+									"back": "`pwd`",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "nRE8a5",
+									"front": "What are the three most common ways to list out files?",
+									"back": "- `ls`\n- `ls -l`\n- `ls -al`\n- (`ll` is often a preprogrammed alias for one of these, which one is it on your machine?)",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "c29GsL",
+									"front": "What does a period at the beginning of a file or directory mean, e.g. `.git` or `.env`?",
+									"back": "it is a hidden file or a hidden directory",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "Roxx15",
+									"front": "How do you change into another directory?",
+									"back": "`cd` plus the name, or start to type the name and then the TAB key",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "rj5bUC",
+									"front": "How do you move back up a directory?",
+									"back": "`cd ..`",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "Romj15",
+									"front": "How do you go back to your home folder?",
+									"back": "`cd` or `cd ~`",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "SL5GvL",
+									"front": "What does the `~` mean in a Linux command?",
+									"back": "it is a symbol that means your home directory, so regardless of where you in your linux directory hierarchy, you can type `ls -al ~/.ssh` and it will list our the files in the .ssh directory under your home directory",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "I7eOXT",
+									"front": "How do you go back to the directory you just moved out of?",
+									"back": "`cd -`",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "yDjNrt",
+									"front": "What are two ways to clear the terminal?",
+									"back": "`clear` or **CTRL-L**",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "LaBD36",
+									"front": "What does a period mean in a Linux command?",
+									"back": "current directory, e.g. `code .`",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "A1ldFP",
+									"front": "How do you get help on Linux commands?",
+									"back": "`man` + name of command",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "ZGBJbs",
+									"front": "How do you create a directory?",
+									"back": "`mkdir` + the name of the directory you want",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "yPSAAY",
+									"front": "How can you create a file?",
+									"back": "`touch` (created empty file), `nano` (simple editor), `vim` (advanced editor)",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "AG6iGD",
+									"front": "How do you copy, move and rename files and directories?",
+									"back": "- `cp` and `mv`\n- make a copy of a file\n\t- `cp package.json backup-package.json`\n- make a copy of a directory\n\t- `cp src backup-src`\n- rename a file/directory\n\t- `mv backup-package.json backup-package.json.txt`\n- move a file/directory\n\t- `mkdir BACKUP`\n\t- `mv backup-package.json BACKUP`\n",
+									"tags": "linuxCommands"
+								},
+								{
+									"id": "rhy5aP",
+									"front": "How do you remove files and directories?",
+									"back": "- with `rm` and `rmdir`\n- remove a file\n\t- `rm index.html`\n- remove a directory (careful)\n\t- `rm -rf node_modules`\n- remove an empty directory only\n\t`rmdir project001`\n",
+									"tags": "linuxCommands assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "ZHdXpd",
+									"front": "What is sudo and when do you need it?",
+									"back": "`sudo` gives you superuser rights, you need it when you e.g. create files that are not in your home directory, or when you install software",
+									"tags": "linuxCommands"
+								}
+							]
+						},
+						{
+							"title": "Git basics",
+							"bulkCurriculum": "\"Branching\n- Moving through the history with `git checkout <commit hash>`\n- Branching out with `git checkout -b <branch name>`\n- Viewing branches with `git branch`\n- Merging with `git merge`\"",
+							"facts": [
+								{
+									"id": "eVk3xT",
+									"front": "What is Git?",
+									"back": "Git is a **distributed version control system** that tracks changes in computer files, for either **single-user projects** or more commonly for **teams of programmers** to **collaboratively develop** code during **software development**",
+									"tags": "basicGit"
+								},
+								{
+									"id": "iWR3RM",
+									"front": "Who created Git, when and why?",
+									"back": "- **Linus Torvalds** created Git in **2005** because the version control system he was using (BitKeeper) for his Linux kernal project was inadequate\n\t- BitKeeper had liscening terms such that it wasn't completely free for the Linux team to use it for their purposes\n- so Linus created his own version control system which was free and open source, called **Git**\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "usET6d",
+									"front": "What were the main design requirements for Git?",
+									"back": "- completely **free and open source** (unlike BitKeeper)\n- **fast and flexible**\n- **decentralized** - no main repository\n\t- every developer has the complete repository on their computer\n\t- e.g. the repository of our course website at GitHub is the same as each of the repositories on our machines\n\t- this wasn't true for e.g. Subversion (SVN) which has a main repository which is the source of truth for the data, while developers check out copies of this\n- **can handle large projects** like the Linux kernel\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "IdSpwF",
+									"front": "What are some alternative version control systems besides Git?",
+									"back": "- there really are no serious competitors to Git anymore\n\t- **CVS** - very old, I remember it from the 90s, the first versioning software I used, centralized and simple, development on this project stopped in 2008\n\t- **SVN** - old, we used this in projects up until 2013, 2014, is now an Apache project and seems to be still developed and used but is increasingly unpopular\n\t- **Mercurial** - similar to Git, one hears about it but I have never used it\n\t\t- *\"even though Mercurial may be easier to learn and use, its branching model often creates confusion\"*\n\t- **Team Foundation Server** - Microsoft's solution, although Git is also commonly used in Microsoft/.NET-based projects\n- Git has become the absolute standard for software development versioning software\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "mj2YzP",
+									"front": "How do you install Git on each of the three main operating systems?",
+									"back": "- on **Linux**:\n\tfor Ubuntu try `sudo apt install git-all`, otherwise here is a more in-depth installation guide: [How To Install Git on Ubuntu 20.04 / 22.04](https://phoenixnap.com/kb/how-to-install-git-on-ubuntu)\n\t- otherwise search for the best installation process for your particular distribution\n- on **macOS**, best would be to use **Homebrew** with `brew install git`\n\t- see [Download for macOS](https://git-scm.com/download/mac)\n- on **Windows**, use the **64-bit Git for Windows Setup**\n\t- see [Download for Windows](https://git-scm.com/download/windows)\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "nmB8B7",
+									"front": "What are the four areas where Git changes can reside, and how do you move these changes from one area to the next?",
+									"back": "- working directory\n- staging area\n- local repository\n- remote repository (GitHub)##thegitcommandssimple\t\t\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "08J1P3",
+									"front": "SKILL: How to use Git for a local project to move files between working directory, staging area and local repository with Git using VSCode and manual Git commands",
+									"back": "- `code .`\n- `git init -b dev`\n- `ls -al` \n- `touch index.html`\n- create index.html with starter HTML\n- commit with VSCode: \"initial commit\"\n- `git log --oneline`\n- add text to page\n- manual commit (same as above VSCode commit)\n\t- `git add .`\n\t- `git commit -m \"added content to index file\"\n- `git log --oneline`\n- add more content\n- manual commit\n- `git commit -am \"third change\"\n\t- note: doesn't work with new files\n\t- my tip: avoid the `-am` option, when manual git, always `git add .`, `git commit -m \"...\"`\n- `git reset .` / `git add .` back and fourth\n- undo commit with VSCode\n- do again at Heztner (Git without VSCode or any GUI at all)\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "yGlXg4",
+									"front": "How do you create and delete a local Git repository?",
+									"back": "- create: `git init -b dev` (creates a local directory with a default branch called `dev`)\n- remove: `rm -rf .git` (deletes your entire local Git repository, so think about it first)\n",
+									"tags": "basicGit"
+								},
+								{
+									"id": "07YnYm",
+									"front": "How can you see what your current changes are and in what area they are, e.g. working directory or staging area?",
+									"back": "`git status`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "POVi56",
+									"front": "How do you move files from your working directory to the staging area?",
+									"back": "`git add .`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "nHYLFJ",
+									"front": "How do you move files from the staging area to your local repository?",
+									"back": "`git commit -m \"set up login page\"`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "DK52rF",
+									"front": "How do you move files from your working directory to the staging area in one step?",
+									"back": "`git commit -am \"fixed negative number bug\"`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "o9uKCu",
+									"front": "What does the command `git commit -am` not commit to the repository?",
+									"back": "newly added files",
+									"tags": "basicGit"
+								},
+								{
+									"id": "HzTBPA",
+									"front": "How to see all commits to your local repository?",
+									"back": "git log --oneline",
+									"tags": "basicGit"
+								},
+								{
+									"id": "fZrJak",
+									"front": "How do undo a commit so the change moves out of your local repository back to your staging area?",
+									"back": "`git reset --soft HEAD~1`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "DNwSOY",
+									"front": "How do you move changes that are in your staging area, back to your working directory?",
+									"back": "`git reset .`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "jkdYG7",
+									"front": "How do you revert a change in the working directory?",
+									"back": "`git checkout -- .`",
+									"tags": "basicGit"
+								},
+								{
+									"id": "8d21e99a-e3b8-11ed-b5ea-0242ac120002",
+									"front": "What does Git store in its repository?",
+									"back": "Basically, Git stores snapshots of how your files looked at specific times in the past. It stores your initial **files**, plus the **differences** between the files (deltas), and **who** changed those files and **when**.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "780cdd7a-e3be-11ed-b5ea-0242ac120002",
+									"front": "What command do you need to execute before `commit -m \"created login page\"`?",
+									"back": "Before you made a commit to a Git repository, you need to move your changes from your working directory to your staging directory with `git add`. Typically you want to move all of your changes, so you would use the command `git add .`",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "83a32400-e3be-11ed-b5ea-0242ac120002",
+									"front": "What are two good characteristics of a good commit message?",
+									"back": "A good commit message (1) describes the change made by the commit, and (2) is less than 50 characters.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "99aeb264-e3be-11ed-b5ea-0242ac120002",
+									"front": "How common is it that modern editors allow developers to do the most common Git commit commands via the visual interface instead of typing the Git commands themselves?",
+									"back": "Very common, e.g. VSCode allows you add files to the staging area, commit, push, pull, stash etc. You can even edit the last commit message by undoing the commit with \"Undo last commit\" and then recommitting it.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "c136cf37-2978-498b-bcef-52be28fc4bce",
+									"front": "How do you list out all Git branches in your local repository?",
+									"back": "`git branch`",
+									"tags": "assessment",
+									"assessment": "bdl"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "publish",
+					"title": "Publishing",
+					"days": [
+						{
+							"title": "GitHub",
+							"bulkCurriculum": "\"Introduction\n- How the internet works (quick overview of TCP/IP)\"\n\"Internet Basics: Quick anatomy of a URL\n- The protocol (brief overview): HTTP, HTTPS, SSH, FTP\n- The address / host: IP addresses, DNS, domain name\n- The resource path\"\n\"Github\n- The Github website\n- Connecting to GitHub with SSH\n- Creating a repository on GH (w. readme)\n- GitHub Publishing\"\n\"Advanced Authoring (Github Flavoured Markdown)\n- External links\n- Internal links (anchors)\n- Images\n- Emoji\n- Checkboxes\n- Tables\"\n\"Locals and Remotes\n- Local repository vs. Remote repository\n- Creating a repository on GH (no readme)\n- Checking a repository's remotes: `git remote -v`\n- Adding a remote: `git remote add <name> <url>`\n- Pushing a branch for the first time: \n  `git push -u <remote name> <branch name>`\"",
+							"instructionItems": [
+								{
+									"id": "V882wc",
+									"kind": "explanation",
+									"title": "The concept of Git branching",
+									"body": "- Git branching allows you (or a team) to work on different versions of a repository at once\n- you can create copy of one branch (usually `dev`) into another (usually a task branch such as `edward-create-status-page`), when you are finished, you merge this back into the original branch##gitbranchingoutline"
+								},
+								{
+									"id": "V8283c",
+									"kind": "explanation",
+									"title": "Different ways to use Git, GitHub and Git branching",
+									"body": "- **1. GitHub Classroom**\n\t- you push directly to default directory\n\t- Code Buddy is installed to check your work automatically\n\t- branching is not used or needed in this use-case of Git and GitHub\n- **2. team projects** - numerous developers\n\t- this is what Git and GitHub are mostly used for in companies and open source developer teams\n\t- this is the reason Linus created Git: to manage code in large projects of many developers\n\t- our course website is an example of this, which gives you experience of working in project teams\n\t\t- you have to work in an organized fashion to avoid chaos and conflicts\n\t\t\t- a developer team has a project board like we have: [WD23-D04 Project Board](https://github.com/orgs/WD23-D04/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%5D)\n\t\t- you check out tasks, then accomplish them\n\t\t\t- you create a **task branch**\n\t\t\t- when finished you create a **pull request**\n\t\t\t- you **merge** your pull request into the dev branch\n\t\t\t\t- if there are conflicts, you **resolve the conflicts**\n\t\t\t- the main work flow is described here: http://localhost:3500/documentation\n\t\t- there is one more step which we don't use yet in our course website and repository: **deployment**\n\t\t\t- if our website was being published online\n\t\t\t- we would have a main branch as well\n\t\t\t- we would develop our site by working on task branches which we merge into dev\n\t\t\t- as a team, we would have e.g. two-week **sprints** in which we have a specific collection of tasks to accomplish\n\t\t\t- at the end of the sprint when all tasks are accomplished and tested in dev, the repository manager would locally merge **dev** into **main**, then push main to the GitHub repository\n\t\t\t- this would trigger DevOps processes which then pull the changes and push them to the live servers\n\t\t- there can be another step before deployment called **testing**\n\t\t\t- the repository manager merges **dev** into **testing** and pushes this to the repository\n\t\t\t- this triggers DevOps processes which push the changes to testing servers that are online\n\t\t\t\t- automatic end-to-end tests are performed on the live data\n\t\t\t\t- manual tests are performed: you can use the site live with smart phones etc.\n\t\t\t- then when all tests pass, the repository managers merges the **testing branch** into the **main branch** and pushes it to the GitHub repository so it gets deployed live\n\t\t- there are many variations on this workflow and various philosophies of how teams should work with GitHub\n\t\t\t- each company and team has a slightly different process\n\t\t\t- but you find these basic concepts in all workflows:\n\t\t\t\t- dev\n\t\t\t\t- testing\n\t\t\t\t- main"
+								},
+								{
+									"id": "jsk2wc",
+									"kind": "liveCoding",
+									"title": "Git branching and merging in an individual project",
+									"body": "- reasons you would create a branch in an individual project\n\t- you want to try without changing the main branch\n\t- you are not sure if something will work and don't want to break the main branch\n\t- you know you are going to be working on a feature for a long time and want to continue making changes in the main branch\n- create branch\n\t- with VSCode\n\t- or `git checkout -b create-menu`\n- merge back to main branch\n\t- go back to dev\n\t- `git merge create-menu`"
+								},
+								{
+									"id": "jsk2wc",
+									"kind": "liveCoding",
+									"title": "Git branching and merging in a team project",
+									"body": "- our course website is an example of a team project\n- see [http://localhost:3500/documentation](http://localhost:3500/documentation)"
+								}
+							],
+							"facts": [
+								{
+									"id": "30fd7cbc-e3bb-11ed-b5ea-0242ac120002",
+									"front": "What is the difference between a commit and a push?",
+									"back": "- A **commit** is a snapshot of changes made to a repository's files. This is often done locally even when one doesn't have a GitHub repository for the local repository. It's useful to simply have certain points in a code's history that you can go back to and observe how it worked at that point, etc.\n- A **push** is the act of uploading the committed changes from your local Git repository to a remote repository, typically GitHub.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "65c21c7a-e3be-11ed-b5ea-0242ac120002",
+									"front": "What command would a developer use to create a branch to work on a new project feature?",
+									"back": "The command `git checkout -b` creates a new branch. So according to the conventions we use in our course website project, if Edward creates a feature branch to add a page called *Tech Podcasts*, he might use the command:\n`git checkout -b edward-create-page-tech-podcasts`",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "601c4ff2-e3be-11ed-b5ea-0242ac120002",
+									"front": "What is the difference between a respository and a branch?",
+									"back": "A **repository** is a collection of files, folders, and version history, along with the necessary metadata for Git to track changes and manage versions.\nA **branch** is a pointer to a specific version of the codebase within a repository. Developers typically create a branch to work on a feature away from the dev branch. When the feature branch is finished, it is pushed to repository at GitHub, a pull-request is made, that pull-request is then merged into the dev branch to become part of the code that all developers are working on.\nWhen the dev branch has all features for a version merged and tested, then its changes are merged into the main branch, which is then pushed to the web for deployment.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "7d0dc9c4-e3be-11ed-b5ea-0242ac120002",
+									"front": "If you are working in a feature branch e.g. `edward-create-login-page` and want to switch back to the `dev` branch, what Git command would you use?",
+									"back": "`git checkout dev`",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "8eb70c4e-e3be-11ed-b5ea-0242ac120002",
+									"front": "What does merging allow you to do?",
+									"back": "Merging allows you to combine changes made on one branch with the changes on a different branch.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "95981ed6-e3be-11ed-b5ea-0242ac120002",
+									"front": "What two commands would you use to merge the changes in the `dev` branch into the `main` so that the changes get published as a new version?",
+									"back": "`git checkout main`\n`git merge dev`",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "5122713e-151b-4033-ae85-1f8d43fb3453",
+									"front": "Is Git the same as GitHub?",
+									"back": "No, Git is a distributed version control system that allows multiple developers in a team to create Git repositories to manage their code changes over time. GitHub is a web-based platform that provides a graphical interface for working with Git repositories. GitHub is a host for online Git repositories.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "0d3a2af2-e39b-11ed-b5ea-0242ac120002",
+									"front": "Who owns Git and GitHub?",
+									"back": "Git is a free and open-source distributed version control system created by Linus Torvalds in 2005. GitHub was created in 2008 by Chris Wanstrath and others. In 2018, Microsoft aquired GitHub for $7.5 billion, so Microsoft owns GitHub but Git remains an open-source project maintained by a community of developers.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "2b909b3a-e39b-11ed-b5ea-0242ac120002",
+									"front": "Is GitHub only used for open-source projects?",
+									"back": "No, but it is very popular with open-source projects because of its generous free tier.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								},
+								{
+									"id": "9d22c02a-e3be-11ed-b5ea-0242ac120002",
+									"front": "In a GitHub repository that has numerous branches and you clone it to your local machine, how many of the branches to you have access to on your local machine?",
+									"back": "All of them.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "collab",
+					"title": "Collaborating",
+					"days": [
+						{
+							"title": "Markdown",
+							"bulkCurriculum": "Introduction: Working together with git and github\n\"Conflicts\n- Making changes to the same file (when merging)\n- Resolving pull conflicts\"\n\"Reviewing\n- Creating a Pull Request on GitHub\n- Pull Request review process\n- Dealing with conflicts in Pull Request (Test merging)\n- Merging on GitHub\"",
+							"facts": [
+								{
+									"id": "f186bab4-e3b8-11ed-b5ea-0242ac120002",
+									"front": "Is Markdown a programming language?",
+									"back": "No, it's a syntax for easily formatting text on the web. Markdown is most commonly used in GitHub README files which describe a repository, or in GitHub project tasks to produce text with rich formatting such as bold, italic, hyperlinks, bullet lists, etc.",
+									"tags": "assessment",
+									"assessment": "bdl"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "assess",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "Code of Conduct Workshop",
+							"bulkCurriculum": "\"Review and assessment\n- Review basic concepts \n- Discuss basic concepts, Q&A\"\nBDL - Assessment"
+						},
+						{
+							"title": "BDL Assessment + BDL Review",
+							"bulkCurriculum": "\"Review and assessment\n- Review basic concepts \n- Discuss basic concepts, Q&A\"\nBDL - Assessment",
+							"instructionItems": [
+								{
+									"id": "V88wwc",
+									"kind": "explanation",
+									"title": "Review of BDL Module",
+									"body": "- **computer hardware is working for everyone**\n\t- we have team members with Ubuntu, Windows, MacBooks\n\t- some have more than one computer with more than one operating system\n\t- does anyone have a Linux Distribution other than Ubuntu?\n\t\t- Debian?\n\t\t- Mint?\n\t\t- Arch?\n\t\t- Fedora?\n- **computer software is set up**\n\t- Visual Studio Code installed\n\t- Node installed (npm is installed with Node, i.e. Node Package Manager)\n\t- Git installed\n\t- multiple browsers\n\t- multiple languages\n- **basic Git skills**\n\t- branching/merging####thegitcommandssimple\n- **basic GitHub skills**\n\t- create GitHub repository\n\t- push/pull from local Git repository\n- **basic developer team skills**\n\t- Course Website cloned and set up\n\t- every morning\n\t\t- look at [what has changed](https://github.com/WD23-D04/WD23-D04-Course-Site/commits/dev)\n\t\t- check course-website channel\n\t\t- check [project board](https://github.com/orgs/WD23-D04/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%5D)\n\t\t- pull changes\n\t\t- deal with issues\n\t\t\t- if someone added npm dependencies\n\t\t\t- `npm i` or `npm run ud`\n\t- [workflow to make a change](http://localhost:3500/documentation) in the Course Website\n- **overview of web development**\n\t- see: [Web Development overview mind map](https://coggle.it/diagram/ZE-oXwAjwnrf-l8P/t/web-development)\n- **class rules have been discussed**\n\t- morning\n\t\t- live-coding on daily DCI curriculum topic\n\t\t\t- reduce unnecessary questions\n\t\t\t- first ask questions in channel fragenbox\n\t\t\t- if students/Albert can't answer questions, then interrupt live-coding and ask\n\t\t\t- my thoughts on this\n\t\t\t\t- I would still encourage relevant discussions about the topic\n\t\t\t\t- one learns by asking questions, comparing new commands with other commands\n\t\t\t\t- asking if we can use what we are learning in another context\n\t\t\t\t- we don't want to discourage discussion of what we are learning\n\t- afternoon\n\t\t- exercises on daily DCI curriculum topic\n\t\t- open topics in main Zoom room"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"orderNumber": 2,
+			"idCode": "uib",
+			"title": "User Interface Basics",
+			"submodules": [
+				{
+					"idCode": "boiler",
+					"title": "Boilerplate",
+					"days": [
+						{
+							"title": "HTML basics",
+							"bulkCurriculum": "\"Introduction\n- HTML document and the browser\n- Defining the user\"\n\"Code Editor\n- Setting up VSCode \n- File directories\n- Extensions (live server, prettier)\n- Keyboard shortcuts\n- Introducing emmet \"\n\"Examining the boilerplate\n- `<!DOCTYPE html>`\n- meta tags \n- Character set\n- `<html>` is the root element\n- `<head>`, `<body>`, `<title>`\"",
+							"instructionItems": [
+								{
+									"id": "8iFlD0",
+									"kind": "liveCoding",
+									"title": "HTML basics",
+									"body": "- **FACT**: What is HTML?\n\t- Hypertext Markup Language\n\t- invented in 1989 by Tim Berners Lee\n\t- the foundation of the World Wide Web\n\t- responsible for the content of web pages that are displayed in browers\n- **FACT**: What are three HTML boilerplate elements?\n\t- boiler plate HTML elements\n\t\t- main HTML structure elements\n\t\t\t- **html**\n\t\t\t- **head**\n\t\t\t- **body**\n\t\t- the **head** element has special information about the HTML page, e.g.\n\t\t\t- **title**\n\t\t\t- **author**\n\t\t\t- **meta tags**\n\t\t\t- **UTF-8**\n- **FACT**: What are the minimum HTML elements used to create web pages?\n\t- `p`, `img`\n\t- `h1`, `h2`, `h3`\n\t- `div`\n\t- `hr`\n\t- `br`\n\t- `strong`, `em`\n- **FACT**: What is the difference between the `b`/`i` elements and the `strong`/`em` elements?\n\t- `b` and `i` have typographical meaning only\n\t\t- refer only to how they should be interpreted as typography\n\t- `strong` and `em` have semantic meaning\n\t\t- refer to how they should be interpreted by their linguistic meaning, e.g. in typography or by a text-reader, and taking into account the linguistic context such as design or cultural aspects\n\t- for this reason, `strong` and `em` are preferred\n\t\t- e.g. notice that markdown converts to `strong` and `em`\n- **FACT**: What are some semantic elements were introduced in 2008 with HTML5?\n\t- header, nav, main, section, aside\n\t- see the rest here: [W3Schools HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)\n- **FACT**: What is the difference between an element and a tag?\n\t- elements are the building blocks of HTML, e.g. `p` and `img`\n\t- tags are the markup used to create those elements, e.g. `<p>`, `</p>` and `<img/>`\n\t- note that the `p` element has an **opening p tag** and a **closing p tag**\n\t\t- while the `img` element has only a **img tag** which is self-closing\n- **FACT**: What is Emmet?\n\t- it helps you to more easily create HTML in a browser\n\t- it is installed by default in VSCode\n\t- see: [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet)\n- **SKILL**: How do I clone and complete a GitHub Classroom exercise?\n\t- click on the link\n\t- [Skip to the next step]\n\t- [Accept this assignment]\n\t- reload Browser\n\t- click on link\n\t- clone to local directory\n\t- click on README.md\n\t- do some tasks of the exercise\n\t- push and look at repository to see how many tasks you have completed\n\t- continue completing tasks until \n- **GITHUB-CLASSROOM EXERCISE**: [UIB-boilerplate-head](https://classroom.github.com/a/PJe-Z5gc)\t\n- **GITHUB-CLASSROOM EXERCISE**: [UIB-content-text](https://classroom.github.com/a/AO-FEk12)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"idCode": "content",
+					"title": "Content",
+					"days": [
+						{
+							"title": "VSCode setup",
+							"bulkCurriculum": "\"Introducing Style\n- Writing CSS inline, internally and externally\n- Anatomy of a declaration (selector, declaration, property, value)\n- The `<link>` tag\n- Commenting with `\\*[comment]*\\`\"\n\"Separation of Concerns - content and presentation\n- HTML is for content, CSS is for presentation: Wikipedia article\"\n\"Lists: Indentation and Family\n- `<ol>`, `<ul>`, `<li>`\n- Changing presentation with `list-style-type`\n- Descendent combinator\n- Understanding nesting, parent - child relationship\"\n\"Classes and IDs\n- Targeting a unique element with the `id` attribute\n- Targeting a group of elements with the `class` attribute\"",
+							"instructionItems": [
+								{
+									"id": "8innn0",
+									"kind": "liveCoding",
+									"title": "VSCode setup",
+									"body": "- **FACT**: What editors are used today for web development?\n\t- **Visual Studio Code**\n\t\t- free\n\t\t- created 2015\n\t\t- the standard editor today for open-source web development\n\t\t- do not confuse this with **Visual Studio**\n\t\t\t- used in .NET development\n\t\t\t- community version free\n\t\t\t- standard versions expensive\n\t\t\t\t- used in most .NET development teams\n\t- **WebStorm**\n\t\t- [Webstorm features](https://www.jetbrains.com/webstorm/features)\n\t\t- €159.00 per year\n\t- **Atom**\n\t\t- was sunsetted on December 15, 2022\n\t- **Sublime Text**\n\t\t- an older editor, I remember it was still popular in 2013-2015\n\t\t- it was never clear if you had to pay for it or not\n\t- **Vim/NeoVim**\n\t\t- has learning curve\n\t\t- requires special setup\n- **FACT**: What is VSCode?\n\t- free and popular code editor developed by Microsoft\n\t- lightweight, cross-platform editor that is free and open-source\n\t- highly extensible and customizable\n\t- has a richt extension ecosystem\n\t- is built with Electron\n\t\t- written in TypeScript, Node.js\n\t\t- interesting: as a MERN-stack developer, you also have the base skills needed to create applications with Electron\n- **FACT**: What are the most useful **extensions** for VSCode?\t\t\n\t- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - run HTML/CSS/JavaScript sites with hot-loading\n\t- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) - identify numerous VSCode instances with frame colors\n\t- [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) - show lives results of JavaScript equations \n\t\t- test.js\n\t\t\t--------------------------------------\n\t\t\tconst colors = ['yellow', 'orange', 'red'];\n\n\t\t\tconst numberOfColors = colors.length;\n\n\t\t\tconst colorLengths = colors.map(m => m.length);\n\n\t\t\tconsole.log(numberOfColors);\n\t\t\tconsole.log(colorLengths);\t\t\t\t\t\n\t\t\t--------------------------------------\n\t\t- normally you have to keep running `node test.js` to see the results\n\t\t\t- and when you have numerous results, they get confused\n\t\t- instead press **F1** and select **Quokka.js: Start on current file**\n\t\t- you will see the results of **console.log** statements live as you type\n\t- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) - easily test API routes for a project\n\t\t- see in course website: `backend\\test.rest`\n\t- [Tabnine](https://www.tabnine.com/install/vscode) - moderately useful AI-powered intellisense while coding, but conflicts with TAB selection so I gradually uninstalled it\n\t- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) - shows parsed .md files in window to the right\n- **FACT**: What are the most important **settings** in VSCode\n\t- to search settings: `CTRL-,`\n\t- `bracket`\n\t\t - Bracket Pair Colorization: Enabled\n- **FACT**: What are the most important VSCode **keyboard shortcuts**?\n\t- **CTRL-P**: search for a file name\n\t- **CTRL-SHIFT-F**: find text anywhere in application\n- **FACT**: How do you use VSCode snippets?\n\t- File > Preferences > Configure User Snippets\n\t- **snippets.code-snippets** (global)\n\t\t---------------------------------------------------\n\t\t\"IMGLINK\": {\n\t\t\t\"prefix\": \"imglink\",\n\t\t\t\"body\": \"<p><a href=\\\"$1\\\"><img src=\\\"$2\\\"/></a></p>\"\n\t\t}\n\t\t---------------------------------------------------\n\t- then type `imglink` and press **TAB**\n\t- the **Tabnine extension** will cause conflicts with snippets, so turn it off if you want to use tabbing to snippet variables\n- **FACT**: What is Vim and how and why would you want to use it in VSCode?\n\t- see: [Invest time in learning Vim in order to code faster](https://edwardtanguay.vercel.app/howtos?id=458)"
+								}
+							]
+						},
+						{
+							"title": "Lists, classes, IDs",
+							"bulkCurriculum": "\"Hyperlinks\n- Anchoring with `<a>`\n- Linking pages\n- ID linking\n- Web links\n- Sending emails with `mailto:`\"\n\"Color in CSS\n- Using keywords, RGB, RGBA, hex\n- Transparency and opacity\n- Combining multiple selectors with `,`\n- HSL, HSLA for self study\"\n\"Pseudo Classes\n- Introducing state pseudo class\n- Coloring links with `:hover`, `:active` and `:visited`\n- The importance of state in UI/UX - feedback and predictability \n- Using MDN to locate additional selectors, combinators, elements and rules\"",
+							"instructionItems": [
+								{
+									"id": "uwMHoZ",
+									"kind": "liveCoding",
+									"title": "CSS basics",
+									"body": "",
+									"tags": "css",
+									"learnItems": [
+										{
+											"id": "X7Hf2h",
+											"kind": "fact",
+											"front": "What is CSS?",
+											"back": "- Cascading Style Sheets\n- created in 1994\n- brings layout and presentation to HTML's content\n- modern CSS as we know it is CSS3 which was defined by the W3C in **2009**\n\t- before CSS3 which introduced **Flexbox**, it was difficult to accomplish even simple layout features across all browsers\n\t\t- e.g. centering text horizontally and vertically \n\t\t- today that is done easily with Flexbox\n\t- but CSS3 wasn't supported widely by browsers until around **2015**\n\t- **Grid** was added to CSS3 in 2017 which made it easier to make larger, more complex layouts",
+											"tags": ""
+										},
+										{
+											"id": "QKFRI8",
+											"kind": "fact",
+											"front": "What are the three parts of a CSS declaration?",
+											"back": "- selector\n- property\n- value",
+											"tags": ""
+										},
+										{
+											"id": "gPIh4s",
+											"kind": "fact",
+											"front": "What is the difference between CSS classes and IDs?",
+											"back": "- both are used to identify specific elements in HTML\n- **classes** \n\t- in HTML clases are specified in the `class` attribute\n\t\t- in React with the `className` attribute\n\t\t- multiple classes can be in one attribute\n\t- in style sheets, classes are denoted by a period (`.`)\n\t- classes group multiple elements together based on a common characteristic\n- **ids**\n\t- an id identifies a single element on a page\n\t- in style sheets ids are denoted by a pound sign (`#`)\n\t- in HTML, an id is specified in an `id` attribute\n\t- a common use today of id is in e.g. React to denote where the React application is injected into the page\n\t\t- see the index.html page in a React application",
+											"tags": ""
+										},
+										{
+											"id": "5HpHV9",
+											"kind": "fact",
+											"front": "What does *separation of concerns* mean?",
+											"back": "- *Separation of concerns* is a design principle for separating a computer program into distinct sections\n- each section addresses a separate concern, e.g.\n\t- HTML is responsible for content \n\t- CSS if responsible for presentation\n- advantages\n\t- separate sections can be swapped out\n\t\t- `computer.css`\n\t\t- `tablet.css`\n\t\t- `mobile.css`\n\t- website that best demonstrtes separation of concerns in terms of HTML/CSS is [Zen Garden](https://www.csszengarden.com) ",
+											"tags": ""
+										},
+										{
+											"id": "e8NlyY",
+											"kind": "fact",
+											"front": "What are three ways to use CSS in HTML/CSS/JS websites?",
+											"back": "- **inline**\n\t- rarely used, you lose the advantages of the \"separation of concerns\" principle\n\t- interesting: this is similar to how Tailwind is used, a framework that is increasing in popularity\n- **internal style element**\n\t- I used this when I have a simple info website which I want to pass around and save as one file\n\t- HTML, CSS and JavaScript all in one file for convenience\n\t- you still have some advantages of the \"separation of concerns\" principle\n- **external stylesheet**\n\t- most common in larger projects\n\t- gives you the advantages of the \"separation of concerns\" principle",
+											"tags": ""
+										},
+										{
+											"id": "bOkios",
+											"kind": "fact",
+											"front": "What are the different purposes of HTML and CSS?",
+											"back": "- HTML is for **content**\n- CSS is for **presentation**",
+											"tags": ""
+										},
+										{
+											"id": "JiZbgn",
+											"kind": "skill",
+											"title": "Create a separate HTML/CSS website inside the course website and merge into dev",
+											"body": "- create **task branch**\n- e.g. if **Edward** wants to create a new HTML/CSS site called **todosite**\n\t- create directory: `backend/data/users/edward/sites/todosite`\n\t- put all following files inside that directory\n\t\t- **index.html**\n\t\t\t- basic HTML page: h1, p\n\t\t- **css/main.css**\n\t\t\t- background style for body\n\t\t\t- style for h1\n\t\t- add to **index.html**\n\t\t\t-------------------------------------\n\t\t\t<link rel=\"stylesheet\" href=\"css/main.css\">\n\t\t\t-------------------------------------\n- make **final commit**\n- **push** to course website repository on GitHub\n- create **pull-request**\n- **merge** into dev\n- **delete** task branch on GitHub\n- in VSCode, go back to **dev**\n- **pull** your change from course website repository on GitHub\n- **delete** local task branch",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "fzd3wk",
+									"kind": "liveCoding",
+									"title": "HTML Lists",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "tngBqk",
+											"kind": "fact",
+											"front": "What are the two kinds of HTML lists?",
+											"back": "- unordered list\n\t-----------------------------------\n\t<ul>\n\t\t<li>Java</li>\n\t\t<li>Python</li>\n\t\t<li>PHP</li>\n\t\t<li>Ruby</li>\n\t</ul>\n\t-----------------------------------\n- ordered list\n\t-----------------------------------\n\t<ol>\n\t\t<li>make final commit</li>\n\t\t<li>push to course website repository on GitHub</li>\n\t\t<li>create pull-request</li>\n\t\t<li>merge into dev</li>\n\t\t<li>delete task branch on GitHub</li>\n\t\t<li>in VSCode, go back to dev</li>\n\t\t<li>pull your change from course website repository on GitHub</li>\n\t\t<li>delete local task branch</li>\n\t</ol>\n\t-----------------------------------\n",
+											"tags": ""
+										},
+										{
+											"id": "ZMAF3O",
+											"kind": "fact",
+											"front": "How do you change the bullet symbol for an unordered lists?",
+											"back": "- `list-style-type`\n- try:\n\t- `none`\n\t- `circle`\n\t- `disc`\n- see others at [MDN: list-style-type](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)\n",
+											"tags": ""
+										},
+										{
+											"id": "Vs86E5",
+											"kind": "fact",
+											"front": "How do you create nested HTML lists?",
+											"back": "- put `ul`/`li` elements inside `ul`/`li` elements\n\t--------------------------------------------\n\t<ul>\n\t\t<li>Java\n\t\t\t<ul>\n\t\t\t\t<li>object-oriented</li>\n\t\t\t\t<li>has many configuration files</li>\n\t\t\t\t<li>used for backend development</li>\n\t\t\t</ul>\n\t\t</li>\n\t\t<li>Python</li>\n\t\t<li>PHP</li>\n\t\t<li>Ruby</li>\n\t</ul>\n\t--------------------------------------------\n",
+											"tags": ""
+										},
+										{
+											"id": "53WcIK",
+											"kind": "fact",
+											"front": "How do you style nested HTML lists?",
+											"back": "- you use the **descendant combinator**, styles separated by spaces\n\t-----------------------------------\n\tul {\n\t\tlist-style-type: circle;\n\t}\n\n\tul ul {\n\t\tlist-style-type: disc;\n\t}\n\t-----------------------------------\n",
+											"tags": ""
+										},
+										{
+											"id": "TvJyMi",
+											"kind": "fact",
+											"front": "What is the descendant combinator?",
+											"back": "- combines two selectors such that elements matched by the second selector are selected if they have an ancestor \n- typically represented by a single space (\" \") character\n",
+											"tags": ""
+										},
+										{
+											"id": "bFJCaw",
+											"kind": "exercise",
+											"title": "Create a HTML/CSS site inside the course website which lists information about JavaScript frameworks",
+											"body": "- in your sites directory (`backend/data/users/YOURNAME/sites/SITENAME`) inside the course website\n\t- create a site that lists information about JavaScript frameworks\n\t\t- e.g. React, Angular, Vue, Svelte, etc.\n\t\t- for each, find at least three characteristics\n\t\t- use nested HTML lists to display the information\n- be sure to create a task branch and pull-request etc. to commit your changes into the course website project\n- you can view your site with the **Live Server** extension\n- your site should look something like [this site](http://localhost:3500/backend/data/users/timo/sites/exercise-0517-lists/index.html):##thehtmlcssframworksite\n",
+											"tags": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Hyperlinks, pseudo classes, colors",
+							"bulkCurriculum": "\"CSS units \n- `px` and `%`\n- `em` vs `rem`\n- `vh` and `vw`\n- Use cases for the different units\"\n\"Debugging with dev tools\n- Debugging our CSS\n- Quick intro to the DOM tree\n- Modifying values\n- https://developers.google.com/web/tools/chrome-devtools/css https://developers.google.com/web/tools/chrome-devtools/css/reference\"",
+							"instructionItems": [
+								{
+									"id": "r5Abra",
+									"kind": "liveCoding",
+									"title": "Hyperlinks",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "QgSPJ6",
+											"kind": "fact",
+											"front": "What are three kinds of uses of the anchor tag?",
+											"back": "- **link to page on another site**\n\t- link to a page in another site on the web, e.g.\n\t\t-----------------------------------------\n\t\tfor more details, see the <a href=\"https://de.wikipedia.org/wiki/Berlin\">Berlin Wikipedia page</a>\n\t\t-----------------------------------------\n- **link to page within same site**\n\t- link to another HTML page inside the current website, e.g.\n\t\t---------------------------------------------\n\t\tplease visit the <a href=\"info.html\">info page</a> for more details\n\t\t---------------------------------------------\n- **link to area within same page**\n\t- use the **hash symbol** and **id**:\n\t\t--------------------------------------\n\t\t<a href=\"#section1\">Section 1</a>\n\t\t<h2 id=\"section1\">Section 1 (<a href=\"#top\">top</a>)</h2>\n\t\t--------------------------------------\n\t- here is an [example site of same-page anchors](http://localhost:3500/backend/data/users/edward/sites/anchortest/index.html)#gif#theanchorok",
+											"tags": ""
+										},
+										{
+											"id": "5kxtBv",
+											"kind": "fact",
+											"front": "How do you force a hyperlink element to open a new browser tab?",
+											"back": "- use the `target=\"_blank\"` attribute:\n\t------------------------------------\n\t`<a href=\"info.html\" target=\"_blank\">get more info</a>`\n\t------------------------------------\n",
+											"tags": ""
+										},
+										{
+											"id": "JEpAsv",
+											"kind": "fact",
+											"front": "How do you create a link that opens up the user's default e-mail program to send a mail?",
+											"back": "- use the `mailto:` prefix:\n\t-----------------------------\n\t<a href=\"mailto:test@company.com\">send an e-mail</a>\n\t-----------------------------\n- note: this is an older solution so today may cause user confusion since it will not open the default mail application for many users, e.g. the mail.google.com website",
+											"tags": ""
+										},
+										{
+											"id": "36Dgh3",
+											"kind": "fact",
+											"front": "What is the difference between the HTML `<a>` element and the React Router `<NavLink>` element?",
+											"back": "- the `<a>` element reload the page while the `<NavLink>` element will not\n\t- this is why in a React application, you want to use the `<NavLink>` element for a better user experience particularly on a mobile phone\n- note, however, that the `<a>` element will work in a React page to navigate to another page, it just reloads the whole site\n- also note that the `<NavLink>` element uses the `<a>` element internally",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "TlUlXy",
+									"kind": "liveCoding",
+									"title": "Pseudo classes",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "NX7DHN",
+											"kind": "fact",
+											"front": "How can you add characters to the start and end an element with CSS?",
+											"back": "- with the pseudo classes `:before` and `:after`\n- example:##beforeaftercss",
+											"tags": ""
+										},
+										{
+											"id": "Ih6doV",
+											"kind": "fact",
+											"front": "How do you change the style of an element when on mouseover?",
+											"back": "- use the `:hover` pseudo element\n- note that you can use `:hover` and `:after` or `:before` together##hoverandafter\n- this is how it works:#gif#showinghoverandafter\n",
+											"tags": ""
+										},
+										{
+											"id": "4W9J8G",
+											"kind": "fact",
+											"front": "How do you style the first, last or specific `li` in an `ul` list?",
+											"back": "- use one of the following pseudo-classes:\n\t- `first-child`\n\t- `last-child`\n\t- `nth-child()`\t\n\t- `first-of-type`\n\t- `last-of-type`\n\t- `nth-of-type()`\n- a realistic example is when you want to style a top-margin of all elements except for the top element:##thelinesbetween",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "TlUlXy",
+									"kind": "liveCoding",
+									"title": "Colors",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "TeJxUN",
+											"kind": "fact",
+											"front": "What are the 7 ways to define colors in CSS?",
+											"back": "- hexidecimal, e.g. `#ff0000`\n- hexidecimal with transparency, e.g. `#ff000044`\n- RGB, e.g. `rgb(255, 0, 0)`\n- RGBA, e.g. `rgba(255, 0, 0, 0.3)`\n- HSL, e.g. `hsl(190,100%,50%)`\n- HSLA, e.g. `hsla(120, 100%, 50%, 0.3)`\n- HTML color names, e.g. `brown`\n- experiment with these in more detail here: [W3Schools: CSS Legal Color Values](https://www.w3schools.com/cssref/css_colors_legal.php)",
+											"tags": ""
+										},
+										{
+											"id": "V7pWOS",
+											"kind": "fact",
+											"front": "How can you use VSCode to easily change colors?",
+											"back": "- when you are in a CSS file, for each defined color, there will be a little color box next to the definition\n- click on the color box and simply choose a new color from the color palette#gif#changethecolors",
+											"tags": ""
+										},
+										{
+											"id": "kQbXDr",
+											"kind": "fact",
+											"front": "What are two examples of using the alpha and opacity for UX hints?",
+											"back": "- you can change the color slightly on mouseover, e.g.\n\t---------------------------------------\n\tbutton.normal {\n\t\tbackground-color: rgba(0, 0, 0, 0.8);\n\t\tcolor: #ccc;\n\t\tpadding: 1rem;\n\t}\n\n\tbutton.normal:hover {\n\t\tbackground-color: rgba(0, 0, 0, 0.7);\n\t}\t\n\t---------------------------------------\n\t- this works like this:#gif#theoverbutton\n- you can give opacity to the hover of an image, e.g.\n\t------------------------------------------------\n\t#content img {\n\t\twidth: 100px;\n\t}\n\n\t#content img:hover {\n\t\topacity: 0.8;\n\t}\n\t------------------------------------------------\n\t- this works like this:#gif#thetwopicsjo",
+											"tags": ""
+										},
+										{
+											"id": "8pDrZO",
+											"kind": "fact",
+											"front": "How can you give the same style to multiple HTML elements?",
+											"back": "- separate the element names with a comma\n- example:##thecommasincss",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "p0P1GB",
+									"kind": "liveCoding",
+									"title": "External HTML/CSS sites",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "PU0SFH",
+											"kind": "skill",
+											"title": "How to create separate website: HTML/CSS multi-page site, push to GitHub repository, and publish at Vercel",
+											"body": "- go to **projects** directory\n- create directory for your project, e.g. `mkdir et001-infosite`\n\t- a note on project names:\n\t\t- I am going to create a GitHub directory for this site and publish it at Vercel\n\t\t- to keep projects straightforward, I recommend to name all of these the same:\n\t\t\t- local directory name: `et001-infosite`\n\t\t\t- GitHub repository name: `et001-infosite`\n\t\t\t- Vercel site name: `et001-infosite`\n\t\t- the name consists of\n\t\t\t- a prefix: \n\t\t\t\t- my initials: `et`\n\t\t\t\t- a running number `001`\n\t\t\t- a hyphen\n\t\t\t- the project name: `infosite`\n\t\t- this way I can make various version of it, e.g. \n\t\t\t- `et002-infosite`\n\t\t\t- `et003-infosite`\n\t\t- because of the prefix, I won't have naming conflicts at:\n\t\t\t- GitHub\n\t\t\t\t- e.g. with my own repositories\n\t\t\t- Vercel\n\t\t\t\t- with my own or other people in the class doing the same project, e.g.\n\t\t\t\t\t- `et001-infosite`\n\t\t\t\t\t- `mm001-infosite`\n\t\t\t\t\t- `sb001-infosite`\n- create `index.html` with boilerplate text\n- create local Git repository: `git init -b dev`\n- **TODO...**",
+											"tags": ""
+										},
+										{
+											"id": "bFowaw",
+											"kind": "exercise",
+											"title": "Create a copy of a Wiki page with internal hyperlinks as a separate HTML/CSS site",
+											"body": "- choose a Wikipedia page such as [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)\n- create an external one-page HTML/CSS website and copy the basic content of the Wiki page to your site\n- create a local Git repository for the site\n- create a repository at GitHub for your site\n- make commits to the site as you develop\n- create a menu at the top which the user can click to jump to each section\n- note: you may need to reduce the width of your browser in order for the links to work\n- publish your site at Vercel",
+											"tags": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "CSS units, debugging and images",
+							"bulkCurriculum": "\"Using Images\n- Introducing the `<img>` tag\n- Importance of the `alt` attribute\n- Absolute and Relative URLs\n- Framing our image with `border`\n- Controlling corners with `border-radius`\n- `width` and `object-fit` to control the aspect-rati\n- Using float (strictly with image and text)\n- Quick intro to Gimp for image manipulation\n  https://www.gimp.org/\"",
+							"instructionItems": [
+								{
+									"id": "pVCMpM",
+									"kind": "liveCoding",
+									"title": "CSS Units",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "WnDkLb",
+											"kind": "fact",
+											"front": "What are the six most-used CSS units?",
+											"back": "- there are many, various CSS units which one can see at [w3schools](https://www.w3schools.com/cssref/css_units.php) but the following are the most common:\n\t- `px` = absolute value\n\t- `%` = relative to size of same property of the parent element\n\t- `em` = relative to font-size of parent element\n\t- `rem` = relative to the font-size of the root element\n\t- `vh` = relative to 1% of the height of the viewport (browser display-window size)\n\t- `vw` = relative to 1% of the width of the viewport (browser display-window size)",
+											"tags": ""
+										},
+										{
+											"id": "PTJL5P",
+											"kind": "fact",
+											"front": "What is the default font-size of the root element given by most browsers?",
+											"back": "- `16px`\n- this is useful to know when you use the `rem` unit, which bases itself on this value, so `1rem` = `16px` and `2rem` = `32px`\n",
+											"tags": ""
+										},
+										{
+											"id": "xquMMX",
+											"kind": "skill",
+											"title": "How to use **rem**, **px** and **Sass** as a pragmatic CSS layout management strategy",
+											"body": "- CSS has so many options, features and possibilities, it is important to choose a strategy which will\n\t- keep your site scalable to various size screens\n\t- enable you to change the site's layout quickly and accurately\n- my strategy is to use\n\t- **rem** for everything that should be scalable, which is usually everything on the site\n\t- **px** for everything that needs to be absolute, e.g. perhaps padding so that text does not get too close to the edges of its parent\n\t- **Sass** to be able to define similar size values as a variable so that, e.g. I can change the padding between all items in one place\n\t\t- in addition the nesting option of Sass makes CSS much easier to use and understand, particularly in large stylesheets\n\t- **vh**/**vw** I use to stretch site-background images across the whole site\n\t- **%** and **em** I practically don't use\n- the site we want to make looks like this:##thesitewithcssunits\n- you can find the code in the course site here:\n\t- `backend\\data\\users\\edward\\sites\\cssunits`\n\t- this is HTML/CSS only and so does not use Sass\n- to use Sass, you need to install it as an npm package\n\t- this requires that you have some kind of framework with a web bundler\n\t- Vite works very well for this for HTML/CSS/JavaScript sites\n\t- code is here: [https://github.com/edwardtanguay/et003-cssunits-site](https://github.com/edwardtanguay/et003-cssunits-site)\n\t- create site\n\t\t- `npm create vite`\n\t\t\t- <site name> e.g. `et003-cssunit-site`\n\t\t\t- Vanilla\n\t\t\t- JavaScript\n\t- start VSCode\n\t\t- `code et003-cssunit-site`\n\t\t- `npm i`\n\t\t- `npm run dev`\n\t\t- `git init -b dev`\n\t- minimalize site##nothingsmini\n\t- copy in code from first site (first without Sass)\n\t- install Sass\n\t\t- `npm i sass`\n\t\t- change name to `style.scss`\n\t\t- convert to nested styles\n\t\t- create `$main-padding: 1.2rem` variable\n- publish at Vercel\n\t- push final commit to GitHub\n\t- setup site at Vercel\n\t- finished site is here: [https://et003-cssunits-site.vercel.app](https://et003-cssunits-site.vercel.app)##thesitewithcssunits\n",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "Ri7UmF",
+									"kind": "liveCoding",
+									"title": "Debugging with Browser Dev Tools",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "TgSR8d",
+											"kind": "fact",
+											"front": "How do you enter Dev Tools in Firefox and Chrome?",
+											"back": "- there are two main ways\n\t- right-click on the element you want to investigate, and choose **Untersuchen**\n\t- press **F12**\n\t- for HTML/CSS debugging, you will spend most of your time in the **Inspector**\n",
+											"tags": ""
+										},
+										{
+											"id": "2RK0OW",
+											"kind": "skill",
+											"title": "Use the browser Dev Tools to debug your HTML/CSS website by viewing and manipulating the DOM tree",
+											"body": "- the DOM tree is the collection of nested elements that one sees in the browser dev tools inspector\n- the DOM (Document Object Model) of your page can be navigated by opening and closing the elements that are nested within each other\n- the tree is also editable, so you can delete nodes, change the text and the nodes, etc.\n\t- the terms **node**, **element** and **tag** are often used interchangably\n\t- we speak of elements as **nodes** when we are talking about the nested elements in a DOM tree\n\t- and remember: an **element** such as a **div** technically has two **tags**, an opening **tag** and a closing **tag**\n\t- and no: a **node** in the DOM tree has nothing to do with Node/Express on the backend :-)\n\t\t- regularly refer back to [the big picture](https://coggle.it/diagram/ZE-oXwAjwnrf-l8P/t/web-development) of web development\n\t- trouble shooting: if the inspector doesn't work, you probably need to reload your (1) Live Server, (2) Vite server (Vanilla), or (3) Vite server (React)\n\t\t- if you are working on a HTML/CSS/JavaScript site that a browser is displaying, then inspector will always work, there is no server in this case\n\t- you delete nodes with the **Delete** button\n\t\t- see what your site would look like with one fewer div\n\t- you can edit node text with **double-click**\n\t\t- you can edit anything in the HTML, e.g. replace text to see if longer words will fit:##changebrowsertext\n\t- you can add elements with **right-click, edit HTML**\n\t\t- then add any HTML elements you want as HTML text\n- the CSS is also editable\n\t- change color\n\t- change value of any property\n\t- change the value of a property with the arrow keys\n\t- click to add a property\n\t- you can turn properties off and on temporarily with the checkboxes\n",
+											"tags": ""
+										},
+										{
+											"id": "n7uZaw",
+											"kind": "fact",
+											"front": "What is the difference between **show source text** and **inspect**?",
+											"back": "- **show source text** shows the HTML that was originally sent to the browser\n- **inspect** shows the HTML that is current in the browser\n- with one-to-one HTML/CSS/JavaScript sites displayed in the browser, these two are the same\n- with Vite (Vanilla and React), these two are different\n- and with Vite, there is another difference if you are looking at a site that is\n\t- being developed\n\t- is built (`npm run build`) and published, e.g. at Vercel\n",
+											"tags": ""
+										}
+									]
+								},
+								{
+									"id": "BRPCdu",
+									"kind": "liveCoding",
+									"title": "Images",
+									"body": "",
+									"learnItems": [
+										{
+											"id": "fn1YLF",
+											"kind": "fact",
+											"front": "What are the main parts of an **img** element?",
+											"back": "- `<img src=\"images/house.jpg\" alt=\"house on lake\"/>`\n- **img** = name of the element\n- **src** = the path and file name of the image\n- **alt** = meta description information for the user/SEO-bot about the image\n- **/>** = the **img** element is a self-closing element, i.e. has only one tag",
+											"tags": ""
+										},
+										{
+											"id": "mWEGlJ",
+											"kind": "fact",
+											"front": "Why is the value of the src attribute difficult to get right?",
+											"back": "- it depends on the environment of your page\n- are you in a \n\t- HTML site shown directly in the browser (e.g. from file:// or from Live Server)\n\t- Vite React site? \n\t\t- Vite React site published at Vercel?\n\t\t- is it an imported image or live-loaded image?\n\t- Vite Vanilla site?\n\t\t- Vite Vanilla site published at Vercel?",
+											"tags": ""
+										},
+										{
+											"id": "qPwQCp",
+											"kind": "fact",
+											"front": "Why is the alt attribute important in an image tag?",
+											"back": "- this is the text that **blind people** hear spoken when they are on your page\n- it increases your **SEO score** since bots know more about your picture\n- if your image is **broken**, this text will display in the broken-image are to tell the user what they should be seeing\n- some users with weak Internet\tconnections may have **images disabled** in their browser",
+											"tags": ""
+										},
+										{
+											"id": "QBpnLK",
+											"kind": "fact",
+											"front": "How do you give an image border?",
+											"back": "- `border: 1px solid #000`\n- `border-radius: 5px`",
+											"tags": ""
+										},
+										{
+											"id": "qbltMw",
+											"kind": "fact",
+											"front": "How can you edit images?",
+											"back": "- [Gimp](https://www.gimp.org)\n\t- Photoshop-like graphic program for Ubuntu/Windows/Mac\n\t- free\n\t- not beginner-friendly but powerful when you get to know it\n- online tools\n\t- free photo editors\n\t\t- https://www.photopea.com\n\t\t- https://pixlr.com\n\t- remove background from photos\n\t\t- https://www.remove.bg/de",
+											"tags": ""
+										},
+										{
+											"id": "WDTlvI",
+											"kind": "fact",
+											"front": "How can you display various parts of an image inside a div?",
+											"back": "- `object-fit: cover` etc.",
+											"tags": ""
+										}, 
+										{
+											"id": "Z5gijf",
+											"kind": "fact",
+											"front": "How can you display text on top of an image?",
+											"back": "- `float`?\n- `position: relative`\n- `position: absolute`",
+											"tags": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Accessibility, specificity",
+							"bulkCurriculum": "\"The importance of accessibility \n-  provide equal access and equal opportunity to people with disabilities\n- Always use the `<title>` tag and `alt` attribute for images\n- What`s a screen reader?\n- using the `aria-label` attribute\n- Google Lighthouse\n   https://developers.google.com/web/tools/lighthouse\n- What is Web Accessibility? - slide presentation\"\n\"Understanding the cascade, specificity and inheritance\n- Conflicting rules\n- !important and why not to use it\n- Specificity - selecting by element, class, ID\n- Inline always wins\n- Non-inheriting properties - `width` and `border`\n- Using dev tools to inspect the cascade\n- Controlling inheritance - `inherit`, `initial`, `unset`\n- Source order\n- Specificity calculator\""
+						}
+					]
+				},
+				{
+					"idCode": "box",
+					"title": "Box-Model",
+					"days": [
+						{
+							"title": "Box model, margin, padding",
+							"bulkCurriculum": "\"Introduction - Everything is a Box\n- Taking a look with dev tools\n- Demonstration with `border: 1px solid red; !important` to show \n     boxes on webpage, eg. google.com\"\n\"Containing Content\n- The default box: the `<main>` tag\n- Shrink Wrapping our content: \n  putting everything in a `<main class=\"\"container\"\">`\n- Changing width and centering: css `width` and `margin: auto`\n- Limiting the height: USE css `height` ONLY in specific situations,\n- Full height content with the `vh` unit\n- Control your flow - the `overflow` property\"\n\"Block Level Semantics\n- A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can)\n- `<section>`, `<article>` and `<aside>`\n- Top and bottom of segments - `<header>` and `<footer>`\n- `<div>` - a generic box for styling\n- Self study - using MDN to find more block elements\""
+						},
+						{
+							"title": "Modeling boxes",
+							"bulkCurriculum": "\"Modeling Boxes\n- Setting box width with `box-sizing: border-box;`\n- Spacing out our boxes - `margin` is for outside, `padding` for inside\n- Reset me softly - `* {margin: 0; padding:0; box-sizing: border-box;}`\n- Margins, paddings, width and height on inline elements\n- Changing boxes with css `display` and `inline`, `block` and `inline-block`\""
+						},
+						{
+							"title": "Background images, positioning ",
+							"bulkCurriculum": "\"Background Images\n- `background-image` is for decoration not content\n- `background-size`, `background-repeat`, `no-repeat`\n- Setting multiple attributes with `background` shortcut\n- Linear and radial gradients\"\n\"Positioning \n- Understanding positioning \n- `static`, `relative`, `absolute`, `fixed`, `sticky` \n- Position offsets - `top`, `bottom`, `right`, `left` \n- Layering boxes with `z-index`\""
+						}
+					]
+				},
+				{
+					"idCode": "review1",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "Assessment and Exam",
+							"bulkCurriculum": "UIB - Assessment I\nUIB - Exam I"
+						}
+					]
+				},
+				{
+					"idCode": "uiux",
+					"title": "UI/UX",
+					"days": [
+						{
+							"title": "UI/UX background, semantics, font-family",
+							"bulkCurriculum": "\"Intro to UI/UX\n- What is the user?\n- What is an interface?\n- What is a user interface?\n- Intro To UXD - slide deck\"\n\"Inline Text Semantics\n- Conveying importance with `<strong>`\n- Emphasizing words with `<em>`\n- Generic inlines with `<span>`\n- Self learning: Finding more inline elements on MDN\"\n\"Font Family\n- Different faces for different meanings: \n  when to use - serif, sans-serif, monspace and cursive\n- Pre Installed System fonts: css `font-family: <font-name>`\n- Providing fallbacks: font stack values for `font-family`\n- Getting more fonts: Google fonts and css `@import` directive\""
+						},
+						{
+							"title": "Font sizing, direction, styling",
+							"bulkCurriculum": "\"Font Sizing\n- Setting text size with `font-size`\n- Relative to parent: `em` sizing and nesting\n- Relative to root: `rem` sizing and the `:root` selector\n- Setting the base size:\n  `:root { font-size: 62.5% }` and decimal `rem`s (1.2rem = 12px)\"\n\"Direction and Alignment\n- Writing text in RTL languages with `direction: rtl;`\n- Aligning text with `text-align`\n- Centring text: comparison between `center` and `justify`\"\n\"Stylish Text\n- Thicker text with css `font-weight`, choosing font weights on google fonts\n- Italics with css `font-style`\n- Underline and line-through with css `text-decoration`\n- Changing case with css `text-transform`\n- Adding shadow and stroking text with css `text-shadow`\n- Text-styling with `:before` and `:after` pseudo-elements\""
+						},
+						{
+							"title": "Icon fonts, Font Awesome",
+							"bulkCurriculum": "\"Icon Fonts\n- Conveying meaning without text: fontawesome\n- Adding fontawesome to our websites: choosing the correct CSS links\n- Sizing icons with Fontawsome sizing utility classes\n- Self-study: Alternatives to Fontawesome - flaticon, thenounproject.com\""
+						},
+						{
+							"title": "Color strategy, box-shadow, typography",
+							"bulkCurriculum": "\"Designing With Colors\n- Creating color palettes\n- Primary and accent colors\n- Importance of lightness and saturation\n- Color temperature: cooling down with blue, warming up with yellow / orange\n- Importance of color choice regarding accessibility concerns\"\n\"Let The Light In \n- Using `box-shadow` to emulate a light source\n- Using inset shadows to create sunken 'well' elements\n- Shadows to convey elevation\n- 2 part shadows - using multiple instances of `box-shadow`\"\n\"Design guidelines for developers\n- Design systems\n- Consistency\n- Typography\n- Less is more (except maybe with whitespace)\""
+						}
+					]
+				},
+				{
+					"idCode": "data",
+					"title": "Data",
+					"days": [
+						{
+							"title": "Tables",
+							"bulkCurriculum": "\"Organizing Data in Tables\n- Tables are only for tabular data, never for layout\n- `<table>` and `display: table`\n- `<tr>` and `<td>`\n- `<thead>`, `<th>`, `<tbody> and <tfoot>`\n- Spanning rows and columns - `<td rowspan=\"\"...\"\">`, `<td colspan=\"\"...\"\">`\n- The `scope` attribute for improved accessibility\"\n\"Styling Tables\n- Overriding borders with css `border-collapse`\n- Zebra stripes with pseudo child selectors: `:nth-child() { ... }`\n- Easy layout with `table-layout: fixed` and `:nth-child() { ... }`\n- Additional info with `<caption>`\n- Specifying `<caption>` placement with `caption-side`\""
+						},
+						{
+							"title": "Forms and validation",
+							"bulkCurriculum": "\"Forms and Dynamic Data\n- Searching - `<form>`, `<input>`\n- Sending forms to a URL - the `action` attribute\n- Importance of names: `<input name=[...]>` attribute, \n   `<label for=[...]>`\n- URL structure & anatomy \n- HTTP verbs - `GET`, `POST` and the `method` attribute\n - `<form>`\"\n\"The Wonderful World of Inputs\n- Text inputs: `type=\"\"email\"\"`, `type=\"\"password\"\"`, `type=\"\"search\"\"`\n- Default text - the `placeholder` attribute\n- `<checkbox>` - the `value` and `checked` attributes\n- Many choices - `type=\"\"radio\"\"`, `<select>`, `<option>`\n- `<textarea>`\n- Set up example with formspree.io\n- `<input type=\"\"file\"\">` and using MDN to find more inputs\"\n\"Validated, Sanitized and Secured\n- Concept of client side form validation\n- HTML form controls - `required`, `minlength` & `maxlength`, \n     `min` & `max`, `type`, `pattern` attributes\n- `:valid` and `:invalid` pseudoclasses\n- Controlled parameters with `<datalist>` and `<optgroup>`\""
+						},
+						{
+							"title": "Styling forms",
+							"bulkCurriculum": "\"Styling our Form\n- Using `:focus` pseudoclass and `outline`\n- `::placeholder` for styling `placeholder` text\n- Styling with attribute selectors\n- `disabled` and `readonly` attributes\n- Mobile Form Design : A UX Perspective - slide presentation\"\n\"Styling our Form 2 - Use Case\n- Creating a CSS only toggle switch\""
+						}
+					]
+				},
+				{
+					"idCode": "responsive",
+					"title": "Responsiveness",
+					"days": [
+						{
+							"title": "Mobile first and media queries",
+							"bulkCurriculum": "\"Mobile First\n- A brief history of web pre and post the smartphone revolution\n- Targeting our users - mobile is the future (and present)\nhttps://gs.statcounter.com/platform-market-share/desktop-mobile-tablet\n- Ensuring proper scale - \n  `<meta name=\"\"viewport\"\" content=\"\"width=device-width, initial-scale=1\"\">`\n- Mobile-First Design - slide presentation\"\n\"Media Queries\n- Anatomy of a media query: `@media [media-type] ([media features]) { ... }`\n- Default media type: `screen` is optional\n- Common features: `(min-width: <size>)`\n- Breakpoints: The \"\"standard\"\" bootstrap breakpoint values\"\n\"Fluid sizing\n- Using `min()`, `max()` and `clamp()`\n- Responsive / \"\"fluid\"\" images with `<picture>` and `<source>`\""
+						}
+					]
+				},
+				{
+					"idCode": "layout",
+					"title": "Layout",
+					"days": [
+						{
+							"title": "Figma",
+							"bulkCurriculum": "\"Planning Our Layout\n- Translating design to code\n- Pen and paper\n- Figma\n- Wireframing for multiple breakpoints\n- Screen layout vs User flows\""
+						},
+						{
+							"title": "Flexbox on parent elements",
+							"bulkCurriculum": "\"Flexbox on parent elements\n- Flexible boxes: `display: flex`, flex child & flex parent concept\n- Aligning and justifying: `justify-content` and `align-items`\n- Direction and wrapping:  `flex-direction` and `flex-wrap`\n- Small shorthand: `flex-flow`\""
+						},
+						{
+							"title": "Flexbox on child elements",
+							"bulkCurriculum": "\"Flexbox on child elements\n- Growing and shrinking: `flex-grow` and `flex-shrink`\n- Base sizing: `flex-basis` and the `flex` shorthand\n- Reordering children:  `order` and `align-self`\n- The perfect center: \n  centering in fixed height parents with `display: flex` and `margin: auto`\n  centering and aligning with `justify-content` and `align-items`\n- Responsiveness - media queries + flexbox\""
+						},
+						{
+							"title": "Flexbox use cases",
+							"bulkCurriculum": "\"Flexbox use cases\n- Cards\n- Media queries and Flexbox \n- Simple page with Flexbox nav and cards\""
+						},
+						{
+							"title": "Grid on parent elements",
+							"bulkCurriculum": "\"CSS Grid on parent elements\n- Making our grid container: `.container { display: grid }`\n- Grid columns: css `grid-template-columns`, and `fr` unit\n- `grid-auto-rows`, `grid-auto-columns`\n- Setting max and min sizes: css `minmax([min], [max])`\n- Spacing columns and rows - `gap`\""
+						},
+						{
+							"title": "Grid on child elements",
+							"bulkCurriculum": "\"CSS Grid on child elements\n- Spanning over several columns: \n   `grid-column: [start] / [end];`, `span` keyword\n- Spanning over several rows: `grid-row: [start] / [end];`\""
+						},
+						{
+							"title": "Defining Grid areas",
+							"bulkCurriculum": "\"Defining grid areas\n- Template areas: setting the parent with keywords, css `grid-template-areas`\n- Placing boxes in an area: css `grid-area`\""
+						}
+					]
+				},
+				{
+					"idCode": "interaction",
+					"title": "Interactions",
+					"days": [
+						{
+							"title": "Built-in animations",
+							"bulkCurriculum": "\"Built in Animations\n- Transitioning property changes with `transition: [prop] [duration] [timing]`\n- Creating a nested navigation bar with `<nav>` and nested `<ul>`\n- Showing dropdowns on `:hover` and `:focus`\n- Affecting element rendering with `transform`\n- Best Design Practices: When and how much transition and animation\""
+						},
+						{
+							"title": "Custom animations",
+							"bulkCurriculum": "\"Custom Animations\n- Creating custom animation scripts: `@keyframes [name] { ... }`\n- Applying animations: `:hover` and `:focus`, css `animation`\n- Controlling the script: `from`, `to` and `%` directives\n- Changing the iteration and direction: \n  `animation-iteration-count`, `animation-direction`\n- Getting predefined animations: http://animista.net/\""
+						}
+					]
+				},
+				{
+					"idCode": "framework",
+					"title": "Framework",
+					"days": [
+						{
+							"title": "Bootstrap",
+							"bulkCurriculum": "\"Bootstrap\n- Adding Bootstrap to our project (with CDNs) -\n  JS dependencies and Bootstrap CSS, `<script src=\"\"...\"\">`\n- Content, Components, utilities - navigating the bootstrap documentation\n- Using the Bootstrap grid system: grid classes and flex\n- Smart copy pasting - read, understand, copy, modify\n- Using Bootstrap components: Creating a page with close to 0 CSS\""
+						},
+						{
+							"title": "Sass",
+							"bulkCurriculum": "\"Sass Introduction\n- What is a preprocessor: Quick definition of transpilation\n- Note to teacher: only mention SASS, teach SCSS syntax\n- Installing SASS: `npm install -g sass`\n- Creating input: `.scss` vs. `.sass`, nesting CSS rules \n- Comparing the output: `sass [input file] [output file]`\"\n\"Build scripts: Using npm as a build tool\n- DCI Project boilerplate I: \n  https://github.com/DigitalCareerInstitute/dci-boilerplate-I\n  - Present the HTML/CSS Sass Bootstrap boilerplate and how to use including dependencies, \n  - Investigate package.json and dependencies, but only on the surface level; transpiling & bundling is covered more during SPA\n- Installing dependencies: `npm install`\n- Running for development: `npm start`\n- Building for publication: `npm run build`\n- Publishing online: `npm run deploy` \"\n\"Sass Variables: an introduction\n- Variables concept: \"\"A box to keep values in\"\"\n- Vanilla CSS Variables: \n  Defining in `:root { --[name]: [value] }`,\n  Using with `var(--[name], [fallback])`\n- Sass variables: Defining with `$[name]: [value]`, Using with `$[name]`\n- Sass maps: A collection of variables in one name\n- Mention a use case of variables: Customizing bootstrap colors\""
+						}
+					]
+				},
+				{
+					"idCode": "publishing",
+					"title": "Publishing",
+					"days": [
+						{
+							"title": "GitHub pages, Netlify, Vercel",
+							"bulkCurriculum": "publish at GitHub, Netlify, Vercel"
+						}
+					]
+				},
+				{
+					"idCode": "review2",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "Assessment and Exam",
+							"bulkCurriculum": "UIB - Assessment II\nUIB - Exam II"
+						}
+					]
+				},
+				{
+					"idCode": "projectWorkshops",
+					"title": "Projects & Workshops",
+					"days": [
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						}
+					]
+				}
+			]
+		},
+		{
+			"orderNumber": 3,
+			"idCode": "pb",
+			"title": "Programming Basics",
+			"submodules": [
+				{
+					"idCode": "language",
+					"title": "Language",
+					"days": [
+						{
+							"title": "Data types, variables",
+							"bulkCurriculum": "\"Introduction\n- What is a programming language?\n- Interpreted languages vs. compiled languages\n- Brief history of JavaScript\n- JavaScript in the front-end and the back-end\n- Learning without a GUI: separation between language and interface\n\nNodeJS\n- introduction to the Node REPL and first hello world program\n\nComments in JavaScript\n - single and multi-line comments\n\nJavaScript Values and Data Types\n- Primitive Data Types: Number, String, Boolean, Undefined, Null\n- Difference between `null` and `undefined` (short)\n- Object data types (brief mention): Array, Object, Date...\n- The unary operator `typeof`\n- Numbers and strings in practice\n- syntax debugging 1: Unclosed parenthesis\n\nVariables and constants\n- Variables and constants: `let` and `const`\n- Legacy: `var`\n- Assignment operator: `=`\n- Variable declaration \n- Variable assignment \n- Variable reassignment\n- Declaration and assignment: `undefined` and `var` hoisting\n- Naming convention: camelCase\n- Syntax debugging 2: undeclared variables\n- introduction to variables in relation to memory\""
+						},
+						{
+							"title": "Expressions, operators",
+							"bulkCurriculum": "\"JavaScript expressions\n- Introduction to JavaScript expressions\n- Literal expressions: `2`, `\"\"hello\"\"`, `true`, `false`, `[1, 2, 3]`...\n- Creating String literal expressions: single and double quotes\n\nBasic arithmetic operators\n- Baisc: `+`, `-`, `*`, `/`\n- Rmainder: `%`\n- Exponentiation: `**`\n\nString concatenation\n- String concatenation with the `+` operator\n\nComparison Operators\n- Strict equality: `===`\n- Strict inequality: `!==`\n- Greater than: `>`\n- Less than: `<`\n- Greater than or equal: `>=`\n- Less than or equal: `<=`\n- Not recommended in practice:\n  - Loose equality: `==`\n  - Loose inequality: `!=`\n\nShorthand Operators:\n- Addition and subtraction assignments: `+=`, `-=`\n- Addition assignment with strings `+=`\n- Increment and decrement operators, `++`, `--`\n\nIntroduction to state\n- The values of all variables at any given point in time\n\nMath class: Math.ceil(), Math.floor(), Math.round(), Math.random()\""
+						},
+						{
+							"title": "Strings",
+							"bulkCurriculum": "\"Working with strings\n- Double quotes, single quotes, backticks\n- Escaping special chars: `\\'`, `\\\"\"`, `\\n`\n- String interpolation: template literals\n- JavaScript expressions inside template strings\n- Getting the length of a string: `String.prototype.length`\n- Getting a character in a string: bracket notation\n\nBasic string methods\n- `String.prototype.toUpperCase()`\n- `String.prototype.toLowerCase()`\n- `String.prototype.slice()` and `String.prototype.substring()`\n- `String.prototype.includes()`\n- `String.prototype.trim()`\n\nNode, npm, Interactive prompt\n- No need to elaborate on these topics because they will be covered extensively in the upcoming modules. A very short introduction and some practical instructions to their usage will be enough here.\n- Adding modules to our project: `npm install <module name>` \n- Installing `readline-sync`: https://www.npmjs.com/package/readline-sync\n- Importing and using an installed module (ES6 syntax, no details)\""
+						},
+						{
+							"title": "Conditional statements",
+							"bulkCurriculum": "\"Working withoug a GUI\n- Possible use cases:\n    - Generating PDF files from data\n    - Zipping files\n    - Processing and generating data\n    - Mini programs\n\nConditional statement\n- What is a statement in JavaScript?\n- Introducing conditional algorithms\n- The `if` statement\n- The default case: `else { ... }`\n- Multiple conditions: `if...else if...else`\n\nBlock scope\n- Introduction to the block scope\n- Code block definition: `if` example\n- Scope and `let` and `const`\n- Scope and `var`\n- Indentation and readability\n\nDifference between Expressions and Statements\""
+						},
+						{
+							"title": "Logical operators",
+							"bulkCurriculum": "\" Logic and logical operators\n    - Logical AND: `&&` \n    - Logical OR: `||`\n    - Lgical NOT: `!`\n- Simple preposition analysis\n- Using logic to solve problems\n    - How does a conveyor belt work?\n    - How does a traffic light work?\n    - TODO: find better examples\n\nConditional statements 2\n- Logical operators and if statements\n- Combining conditions using logical operators\n\nTernary operator\n- Conditional expression with ternary operator\n- Differece between ternary operator and if statement\""
+						},
+						{
+							"title": "Truthy/falsy, parsing, NaN",
+							"bulkCurriculum": "\"Truthy and falsy values\n- `false`,`0`, `-0`, `0n`, `\"\"\"\"`, `null`, `undefined`, `NaN`\n- Truthy values: every other value that is not a falsy value\n- Difference between `==` and `===`\n- Syntax debugging 7: Using assignment (`=`) instead of equality (`===`)\n\nShort circuit assignment\n- Assigning fallback value (default value) with `||`\n\nParsing and conversion\n- Parsing numbers into strings: `parseInt()`, `parseFloat()`\n- Converting strings into numbers: `Number()`\n\nNaN - NotANumber\n- Introducing NaN\n- `typeof NaN`\n- Checking for NaN: \n    - `isNaN()`\n    - `Number.isNaN()`\n\nSwitch statement (short explanation)\""
+						},
+						{
+							"title": "Arrays",
+							"bulkCurriculum": "\"Array\n- Saving multiple values in one value \n- Array literals\n- Assigning array literals\n- Accessing array items with square brackets\n- Re-assigning array items with square brackets\n- Arrays and `const`\n\nBasic Array methods\n- Adding items: `Array.prototype.push()`, `Array.prototype.unshift()`\n- Removing items: `Array.prototype.pop()`, `Array.prototype.shift()`\n- Array.prototype.slice()\n- Array.prototype.includes()\n\nArray to String, String to Array\n\nGetting input from the terminal\n- `process.argv`\n- `process.exit()`\n\nExtra:\n- Finding Items: `Array.prototype.indexOf(<item>)`\n- Manipulating arrays: `Array.prototype.reverse()`\n- Manipulating arrays: `Array.prototype.splice()`\""
+						}
+					]
+				},
+				{
+					"idCode": "program",
+					"title": "Program",
+					"days": [
+						{
+							"title": "For and while loops",
+							"bulkCurriculum": "\"The flow of a program\n- How is a program interpreted?\n    - From left to right\n    - From top to bottom \n\nThe for loop statement\n- Repeating code blocks a set number of times: \n- Block scope with for loop\n- Nesting `for` loops (brief)\n\nAccumulator pattern\n- calculating the sum of the numbers from 1 to 10\n\nWhile loop statement\n- The while loop vs for loop\n- Use `while` when you don't know in advance the number of iterations needed\n- Use `while` when the condition is not numerical\n    - `while (!isValidUsername)`\n    - `while (!isNumber)`\n- `while` in combination with `readline-sync`\n    - keep prompting for input until the input is valid\n        - type \"\"Y/N\"\"\n\nClearing the terminal\n- console.clear()\""
+						},
+						{
+							"title": "Iterables, algorithms",
+							"bulkCurriculum": "\"Algorithms\n- What is an algorithm?\n- Analyzing problems: input and output\n- Coming up with solutions: writing algorithms\n\nLoops and iterables \n- Using the for loop with arrays\n- Using the for loop with strings\n- Primitive examples of `map`, `filter` and `reduce` with standard loop\n- Breaking out of a loop: `break;`\n- Skipping an iteration: `continue;`\n\nfor...of loop (optional)\n- What are iterables in JavaScript?\n- If you plan to use the `for...of` loop, this could be a good moment to introduce it\""
+						}
+					]
+				},
+				{
+					"idCode": "functions1",
+					"title": "Functions-I",
+					"days": [
+						{
+							"title": "Function declaration",
+							"bulkCurriculum": "\"Function\n- Introduction to functions\n- Benefits of writing functions: \n    - Avoid repetitions\n    - Better structure in our code\n    - Ability to execute some code in response to an interaction (we'll see this later)\n    - Restarting a program, for example when using `readline-sync`\n- Review of functions called so far\n\nFunction declaration\n- Declaring a function:\n- Anatomy of a function:\n    - The function keyword\n    - Function name\n    - Function parameters\n    - Function body\n    - The return statement\n- Function parameters: naming and order\n\nCalling a function\n- Function arguments\n- Difference betweent parameters and arguments\""
+						},
+						{
+							"title": "Scope, arrow functions",
+							"bulkCurriculum": "\"Function Scope\n- Parameters scope\n- Declaring variables in functions\n- Global vs. Local scope\n- Variable reassignment in functions\n\nFunction expressions\n- Different ways of creating a function\n    - Standard function declaration\n    - Function expression\n        - `const <function name> = function(<parameters>){ ... }`\n    - Arrow function expression: \n        - `const <function name> = (<parameters>) => { ... }`\n        - Variants of arrow function\""
+						},
+						{
+							"title": "Return statement, call stack",
+							"bulkCurriculum": "\"Return statement and side effects\n- Side effects definition: Changing the global scope, relying on outer scopes\n- Pure function definition\n\nThe call stack\n- Introduction to the call stack\n- Calling functions from other functions\""
+						},
+						{
+							"title": "Rest and spread syntax",
+							"bulkCurriculum": "\"Advanced Parameters\n- Default parameter values: `function(<parameter> = <default value>) { ... }`\n- Rest syntax: Variable number of arguments: Rest params - `...args`\n- Spread syntax with iterables\""
+						}
+					]
+				},
+				{
+					"idCode": "review1",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "Assessment",
+							"bulkCurriculum": "multiple-choice assessment"
+						},
+						{
+							"title": "Exam",
+							"bulkCurriculum": "JavaScript exam"
+						}
+					]
+				},
+				{
+					"idCode": "objects",
+					"title": "Objects",
+					"days": [
+						{
+							"title": "Objects, arrays",
+							"bulkCurriculum": "\"Objects\n- Saving multiple variables in one namespace\n- Object literals \n- Accessing properties with bracket notation (no variables)\n- Accessing properties with dot notation\n- Empty object\n- Accessign a non-existing property\n- Brief mention of why the bracket notation is still necessary\n\nObject and Array\n- The type of an array\n    - array is an object\n    - `typeof {}`\n    - `typeof [1, 2, 3]`\n    - check if a value is an array: `Array.isArray()`\""
+						},
+						{
+							"title": "The this keyword, methods",
+							"bulkCurriculum": "\"Object Scope\n- `this` keyword\n\nMethods\n- Methods definition\n- Using methods: Review of used methods so far\n- Creating methods\""
+						},
+						{
+							"title": "Bracket notation, object methods, for...in",
+							"bulkCurriculum": "\"Bracket notation with objects\n\nConversion and iterations\n- Property names to array: `Object.keys(<object>)`\n- Property values to array: `Object.values(<object>)`\n- Property names and values to array: `Object.entries(<object>)`\n\nfor...in (optional)\n- Iterating over object properties using `for...in`\""
+						},
+						{
+							"title": "Nesting arrays and objects",
+							"bulkCurriculum": "\"Nesting arrays and objects\n- Nesting and accessing arrays within each other\n- Nesting and accessing objects in objects\n- Nesting and accessing arrays in objects\n- Nesting and iterating over objects in arrays\n\""
+						},
+						{
+							"title": "Cloning, destructuring",
+							"bulkCurriculum": "\"Shallow cloning objects\n- passing objects and arrays as function arguments and side effects\n- Shallow cloning objects and arrays\n- Deep cloning objects and arrays: recursive function (no need to explain this, just mention it if useful)\n\nDestructuring\n- Extracting values from arrays: Array destructuring assignment\n- Extracting values from objects: Object destructuring assignment\n- Named function parameters with object destructuring\""
+						}
+					]
+				},
+				{
+					"idCode": "functions2",
+					"title": "Functions-II",
+					"days": [
+						{
+							"title": "Function as value, callbacks",
+							"bulkCurriculum": "\"Function as value\n- Review: assign functions to variable \n- A function behave like any other value\n\nHigher-order function\n- A function that accepts a function as an argument\n- Aand/or a function that returns a function\n\nCallback\n- `map()` function built from scratch\n- `filter()` function built from scratch \n- `reduce()` function  built from scratch\""
+						},
+						{
+							"title": "Closure",
+							"bulkCurriculum": "\"Closure\n- Declaring functions inside functions\n- Nested scopes: Accessing outer variables\n- First definition of closure: \n  \"\"\"\"A function that contains at least one variable, and one nested scope\"\"\"\"\n- Higher Order functions I: \"\"\"\"Functions that return other functions\"\"\"\"\n- Reading a program VI (the function call onion)\"\"\""
+						},
+						{
+							"title": "Higher order functions: find, filter",
+							"bulkCurriculum": "- Getting a item in an array: `Array.prototype.find(<function>)`\n- Getting a subset of an array: `Array.prototype.filter(<function>)`"
+						},
+						{
+							"title": "Higher order functions: forEach, map",
+							"bulkCurriculum": "\"Advanced Array methods 1\n- Iterating over arrays: `Array.prototype.forEach(<function>)` (keep this short)\n- Converting an array to a different array: `Array.prototype.map(<function>)`"
+						},
+						{
+							"title": "Higher order functions: sort, reduce",
+							"bulkCurriculum": "\"Advanced Array methods 2\n- Sorting arrays: `Array.prototype.sort(<function>)`\n- Converting an array to a single value: `Array.prototype.reduce(<function>)`\n"
+						}
+					]
+				},
+				{
+					"idCode": "algorithms",
+					"title": "Algorithms",
+					"days": [
+						{
+							"title": "Basic Algorithms",
+							"bulkCurriculum": "Algorithm complexity\n- Thinking of algorithm complexity: Big O Notation\n- Reading complex algorithm examples: sorting, shortest path\""
+						},
+						{
+							"title": "Recursion",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "classes",
+					"title": "Classes",
+					"days": [
+						{
+							"title": "Basic OOP and JavaScript classes",
+							"bulkCurriculum": "\"Classes\n- Manufacturing objects with the same structure\n- Creating instances with the `new` keyword\n- The `Date` class (short mention)\n- Constructing an object: The `constructor()` method, instance and `this`\""
+						},
+						{
+							"title": "Two OOP design patterns",
+							"bulkCurriculum": "Two examples of OOP design patterns using JavaScript classes: Singleton and Factory: https://edwardtanguay.vercel.app/howtos?id=517"
+						}
+					]
+				},
+				{
+					"idCode": "review2",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "Assessment and exam",
+							"bulkCurriculum": "Second programming-basics assessment and exam"
+						}
+					]
+				},
+				{
+					"idCode": "projectWorkshops",
+					"title": "Projects & Workshops",
+					"days": [
+						{
+							"title": "Projects/Workshop: Vitest",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Mocha/Chai",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Jasmine",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						}
+					]
+				}
+			]
+		},
+		{
+			"orderNumber": 4,
+			"idCode": "spa",
+			"title": "Single Page Application",
+			"submodules": [
+				{
+					"idCode": "dom",
+					"title": "DOM",
+					"days": [
+						{
+							"title": "Basic DOM, getting elements",
+							"bulkCurriculum": "\"Introduction: Javascript in the browser\n- Historical context for JS: browser wars, actionscript, jQuery, ES6\n- Brief mention of JS Engines: \n  V8 (Chrome, Node, Edge) \n  vs. SpiderMonkey (Firefox) \"\n\"Adding javascript to HTML\n- The `<script>` tag\n- External JS with `<script src=\"\"...\"\">`\"\n\"The `window` object\n- Host objects vs. native objects: Brief comparison with `window`\n- `window` as the global scope: Seeing variables on the `window` object\n- User input and messages to window: `window.prompt()` and `window.alert()`\n- The `document` object: quick overview\n- HTML DOM documentation: MDN\"\n\"Querying: Getting elements from `document`\n- Selecting elements the old-way with `document.getElementById(<id string>)`\n- Selecting by CSS query: `document.querySelector(<selector string>)`\n- Getting more than one element: `document.querySelectorAll(<selector string>)`\n- Element style: Changing css styles with `HTMLElement.style` property\""
+						},
+						{
+							"title": "Manipulating and Transversing elements",
+							"bulkCurriculum": "\"Manipulating: Changing the DOM tree\n- Manipulating classes: `Element.classList` methods \n- Changing the text inside an element: The `HTMLElement.innerText` property\n- Changing the HTML content: The `Element.innerHTML` property\n- Creating Elements: `document.createElement(<tag name>)`\n- Adding elements to the page: `Element.append(<Element object>)`, see MDN docs for .append()\"\n\"Traversing: Jumping from one element to its relative\n- Node vs. Element: \n  Comparing `Node.previousSibling` and `Element.previousElementSibling`\n- Getting an element's closest parent: `Element.closest(<selector string>)`\n- Testing an element against a selector: `Element.matches(<selector string>)`\n- Getting all children of an element: `ParentNode.children`\n- Selecting specific children: `ParentNode.querySelector(<selector string>)`\n- Finding more traversal techniques: MDN \""
+						},
+						{
+							"title": "DOM events",
+							"bulkCurriculum": "\"Events\n- User Events (interaction)\n- Browser Events (loading, etc...)\"\n\"Listening\n- Higher order functions I recap: \n  functions that accept function values (callbacks)\n- Listening to user actions:\n  `EventTarget.addEventListener(<namespace>, <callback>)`\n- Mouse Events: `click`, `mouseenter`, `mouseleave`\n- Removing event listeners: \n  `EventTarget.removeEventListener(<namespace>, <function reference>)`\n- Listening to browser events: `DOMContentLoaded` event\n- Finding more events on MDN\""
+						},
+						{
+							"title": "Forms and propagation",
+							"bulkCurriculum": "\"The Event Object\n- Keyboard Events: `keydown`, `keyup`\n- The event object properties: A console example\n- Getting the target of the event: `Event.target`\n- Form events: `submit`, `reset`, `Event.preventDefault()`\n- Getting form values on submit: \n  `target.elements[<id>]`, `target.elements[<name>]`, `Element.value`\"\n\"Propagation, Delegation: `<ul>`, `<li>` examples\n- Event bubbling concept: \n  \"\"Events bubble from innermost to outermost elements\"\"\n- Common problems with bubbling: `Event.stopPropagation()` as solution\n- Different targets: `Event.target` vs. `Event.currentTarget`\n- Event listener issues: Performance impact, adding events to dynamic lists\n- Event delegation solution: Delegating events from parent to child\n- Reversing propagation: \n  The `useCapture` option in `addEventListener()`, \n  `DOMContentLoaded` use case \""
+						}
+					]
+				},
+				{
+					"idCode": "modules",
+					"title": "Modules",
+					"days": [
+						{
+							"title": "Imports, exports",
+							"bulkCurriculum": "\"Introduction\n- Modules for smaller files\"\n\"Module Basics\n- Brief overview of IIFE and the Module pattern\n- Advantages of scope isolation and encapsulation\n- Using modules in the browser: `<script type=\"\"module\"\" src=\"\"...\"\">`\n- Connecting files: The `import` and `export` keywords\"\n\"Imports and Exports\n- Default exports vs. named exports: \n  `export default`, `export {<var1>, <var2> [, ...]}`\n- Namespacing imports: \n  `import <namespace> from <path>`, `import * as <namespace> from <path>`\n- Destructuring imports: `import { <var1>, <var2 [, ...]} from `<path>`\""
+						},
+						{
+							"title": "Transpiling, bundling",
+							"bulkCurriculum": "\"Transpiling & Bundling\n- Browser compatibility and modules: Transpiling ES with Babel\n- Bundling tools overview: \n  Packaging our processed code with Webpack \n  (intro ONLY, no need to start writing configs)\"\n\"Npm workflow\n- Adding modules to our project: `npm install <module name>`\n- Dependency List: \n  reading `package.json`, `dependencies` vs. `devDependencies`\n- Using 3rd party modules: `import <namespace> from <dependency name>`\""
+						}
+					]
+				},
+				{
+					"idCode": "async",
+					"title": "Asynchronous Programming",
+					"days": [
+						{
+							"title": "Working with JSON",
+							"bulkCurriculum": "\"JSON: \"\"JSON is JS Objects in text\"\"\n- Converting objects to JSON: `JSON.stringify(<object>)`\n- Parsing JSON objects: `JSON.parse(<JSON string>)`\n- JSON pitfalls: strict notation, `JSON.parse()` causes runtime errors\"\n\"Debug\n- Debugging javascript with node and vscode\n- Debugging node scripts with chrome: `node inspect <filename>`\n- The `debugger;` statement\n- Keeping track of state: inspecting scopes in chrome\"\n\"Runtime errors\n- Catching errors: `try { ... } catch (e) { ... }`\n- Throwing runtime errors: `throw <expression>;`\n- The error object (brief intro): `new Error(<message>);`\"\n\"Blocking parsing and rendering\n- Usage of script elemnet attributes async and defer for increasing speed and performance\n- The domInteractive event\n- Dynamic scripts injection\"\n\"Simplifying Asynchronous Code\n- Why use promises: callback hell, pyramid of doom\n- Problems with promises: scoping issues, endless chain\n- Using promises modernly: \n  `async` functions, `await` keyword,\n  \"\"Async functions always return a promise\"\"\""
+						},
+						{
+							"title": "Getting data with fetch and axios",
+							"bulkCurriculum": "\"Getting data: Fetch examples\n- 3rd Party APIs: \n  brief introduction, why should making requests be asynchronous\n- Getting info: `window.fetch(<url>)`, the response object overview\n- Parsing JSON: `response.json()`\n- Using data: `fetch(<url>).then(<callback>)` vs. `await fetch(<url>)`\""
+						},
+						{
+							"title": "Changing data with fetch and axios",
+							"bulkCurriculum": "Using json-server\n\"Posting data: JSONPlaceholder examples\n- HTTP Methods repeat: GET vs. POST\n- Sending data with Fetch: `fetch(<url>, <options>)`, the `method` option\n- Parsing the body: the `body` option in fetch\n- Sending forms with JS: creating a post request on submit\"\n\"CORS\n- What are Cross Origin Requests\n- Making requests to other domains: The same origin policy\n- CORS: Cross Origin Resource Sharing, Accepted CORS headers\n- Adding CORS headers to request: \n  the fetch `headers` option, the `Origin` header\n- Working around CORS: Using a proxy script for development, `cors-anywhere`\"\n\"Saving Data: Use Cases for saving data in the browser\n- Methods of saving data to the browser: `localStorage` vs. `sessionStorage`\n- Setting data: Key value pairs, `Storage.setItem(<key>, <value>)`\n- Getting data: `Storage.getItem(<key>)`\n- Avoiding errors: Creating a promise wrapper for localStorage\""
+						},
+						{
+							"title": "Custom Promises",
+							"bulkCurriculum": "\"Introduction\n- The request response cycle\n- Client perspective\"\n\"Non-Blocking Promises\n- Blocking vs. Non-Blocking code: A brief example, `window.setTimeout()`\n- Race conditions: Reading non blocking code\n- Promises: \n  `new Promise(<function>)`, `Promise.resolve()`, `Promise.then()`\n- Promisifying: Converting `setTimeout()` to a promise\n- Breaking Promises: \n  `Promise.reject()`, `Promise.catch()`, `Promise.finally()`\""
+						}
+					]
+				},
+				{
+					"idCode": "review1",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "SPA I Assessment and SPA I Exam",
+							"bulkCurriculum": "SPA - Assessment I\nSPA - Exam I"
+						}
+					]
+				},
+				{
+					"idCode": "boilerplate",
+					"title": "Boilerplate",
+					"days": [
+						{
+							"title": "Create site with Vite, publish to Vercel",
+							"bulkCurriculum": "\"Introduction\n- What is a Single Page Application?\n- Why do we need it?\"\n\"Framework\n- MVC Concepts: V is for View (Brief Definition)\n- Framework obsession: Overview of the JS Framework landscape\n- React intro: Why react? React vs. Web Component Standard\n- React Ecosystem: React, Native, Expo Framework, Gatsby, Nextjs\n- Modern React Development with Hooks\"\n\"Quickstart with Create React App\n- Starting a react project: `npx create-react-app <app name>`\n- What's in the box: Reviewing package.json\n- Package.json scripts - what and why, creating an example script\n- Project structure: `src` vs. `public` folders, the `build` folder\n- Render in React: `index.js`\n- Including styles: `import <path to css>`\"\n\"Component Anatomy: Dissecting `App.js`\n- Entry Point: `App.js`, the boilerplate `App` component\n- Importing images: `import <image name> from <path to image>`\n- Using images: `<img src={imageName} alt=\"\"...\"\" />`\"\nDebugging React with \"React Developer Tools\"\n\"Templating with JSX: Slightly different html\n- Multi-line templates: `const <component name> = () => (<JSX>)`\n- One element per component: `React.Fragment` for multiple html tags\n- Put the JS in JSX: Using `{}` for JS expression interpolation\n- Comments in JSX\n- Conditional rendering\n- Generating lists with Array map, the `key` property\""
+						}
+					]
+				},
+				{
+					"idCode": "component",
+					"title": "Component",
+					"days": [
+						{
+							"title": "Basic JSX in React Components",
+							"bulkCurriculum": "\"Introduction\n- Thinking in Components\n- Difference between Class & Functional component\"\n    display variables\n    conditional rendering: if-statement\n    conditional rendering: if-else-statement\n    understand conditional rendering and data security\n    dynamic inline styles\n    dynamic classes\n    display an array of objects\n    fragment\n    state variables and JSX"
+						},
+						{
+							"title": "Components and props",
+							"bulkCurriculum": "create site with all data in App.tsx, then refactor it into components"
+						},
+						{
+							"title": "useState and event handlers",
+							"bulkCurriculum": "load JSON data in useState and clicks to change it"
+						},
+						{
+							"title": "useEffect, API calls",
+							"bulkCurriculum": "API that displays items from API"
+						},
+						{
+							"title": "Searching",
+							"bulkCurriculum": "demonstrate two methods of implementing search"
+						},
+						{
+							"title": "LocalStorage",
+							"bulkCurriculum": "API that displays items (jobs) which has checkbox saved in localStorage"
+						},
+						{
+							"title": "React forms",
+							"bulkCurriculum": "\"Handling Forms\n- A clash of state: State in vanilla HTML forms vs. state in react components\n- Controlled components: react state as the single source of truth\n- Controlling the value of inputs\n- Handling multiple inputs with one `onChange` handler\n- Submitting forms: making API calls on submit with data from state\n- Controlled Component\n- Mutable ref objects\""
+						},
+						{
+							"title": "Bootstrap with React",
+							"bulkCurriculum": "Create React site with React Bootstrap and Bootswatch templates: https://edwardtanguay.vercel.app/howtos?id=544"
+						},
+						{
+							"title": "Implementing CRUD",
+							"bulkCurriculum": "Using json-server to create site which allows user to create, read, update and delete items"
+						}
+					]
+				},
+				{
+					"idCode": "router",
+					"title": "Router",
+					"days": [
+						{
+							"title": "Basic React Router",
+							"bulkCurriculum": "\"Introduction\n- Routing in a Single Page Application with React Router\"\n\"3rd party component libraries\n- Container components (manage state) vs. Display components (render dom)\n- Display component libraries: reactstrap (documentation and simple example)\n- Container components: react-router-dom (documentation)\"\n\"Route Components: Setting up react-router-dom\n- Brief overview: The Browser History API (what is it, where to read more)\n- Wrapping our app with a `<BrowserRouter>` container component\n- `<BrowserRouter>` vs. `<HashRouter>`: when to use\""
+						},
+						{
+							"title": "Advanced React Router",
+							"bulkCurriculum": "Use React Router to build navbar, nested navbars and use advanced features: https://edwardtanguay.vercel.app/howtos?id=634\n\"Route Matching Components: Our first routes\n- Conditionally render according to URL: the `<Route>` component\n- Choosing only one route to render: `<Switch>`\n- Pitfalls: Order paths in `<Switch>`, Rendering exact paths with `exact`\n- Project Organization III: The `views` folder for page components\n- Leaving out the path: Rendering 404 components\"\n\"Building Navigation\n- Using `<Link>` to navigate to a path\n- Creating a Navigation bar with `<NavLink activeClassName=\"\"[...]\"\">`\n- Library clash: Using reactstrap `<NavLink>` with react-router `<NavLink>`\n  https://github.com/reactstrap/reactstrap/issues/1285#issuecomment-446592497\n- Redirecting components: `<Redirect>`\"\n\"Route Parameters\n- Creating dynamic route paths with route params: the `/:<param>` notation\n- Route props: Accessing route params with the `match.params` prop\""
+						}
+					]
+				},
+				{
+					"idCode": "store",
+					"title": "Store",
+					"days": [
+						{
+							"title": "useContext",
+							"bulkCurriculum": "\"Context API\n- Provider and Consumer component\n- Consume the Context `useContext`\n"
+						},
+						{
+							"title": "useReducer",
+							"bulkCurriculum": "- Enhance the context using a Reducer `useReducer`\""
+						},
+						{
+							"title": "Redux",
+							"bulkCurriculum": "Create React shopping site example with Redux using TypeScript: https://edwardtanguay.vercel.app/howtos?id=640"
+						},
+						{
+							"title": "Zustand",
+							"bulkCurriculum": "Create React site that uses Zustand as a state manager: https://edwardtanguay.vercel.app/howtos?id=601"
+						}
+					]
+				},
+				{
+					"idCode": "hooks",
+					"title": "Hooks",
+					"days": [
+						{
+							"title": "Custom hooks",
+							"bulkCurriculum": "Build a React site that demonstrates how to make custom hooks: https://edwardtanguay.vercel.app/howtos?id=633\n\"Advanced hooks\n- Memoization with `useMemo` and `useCallback`\""
+						}
+					]
+				},
+				{
+					"idCode": "deploy",
+					"title": "Deployment",
+					"days": [
+						{
+							"title": "Deploy React site to various hosting providers",
+							"bulkCurriculum": "\"Deployment of React Apps\n- JAM stack and serveless infrastructure\n- GitHub, GitHub pages and Actions\n- Vercel: architecture, cli setup and deployment\n- OR Heroku: architecture, cli setup and deployment\n- OR Firebase: architecture and deployment\n- OR Netlify: architecture and deployment\""
+						}
+					]
+				},
+				{
+					"idCode": "review2",
+					"title": "Review & Assess",
+					"days": [
+						{
+							"title": "SPA Assessment II and SPA Exam II",
+							"bulkCurriculum": "SPA - Assessment II\nSPA - Exam II"
+						}
+					]
+				},
+				{
+					"idCode": "projectWorkshops",
+					"title": "Projects & Workshops",
+					"days": [
+						{
+							"title": "Projects/Workshop: Next.js",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Angular",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Vue",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Solid",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Gatsby",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Remix",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Svelte",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Astro",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						}
+					]
+				}
+			]
+		},
+		{
+			"orderNumber": 5,
+			"idCode": "be",
+			"title": "Backend",
+			"submodules": [
+				{
+					"idCode": "server",
+					"title": "Server",
+					"days": [
+						{
+							"title": "Node/Express API (Job site)",
+							"bulkCurriculum": "ES6/TypeScript, Postman and REST Client, frontend"
+						},
+						{
+							"title": "Job Site (MVC)",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Job Site (CRUD)",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Job Site (secured and online)",
+							"bulkCurriculum": "middleware, environmental variables, cyclic"
+						},
+						{
+							"title": "EJS Site (server-side, online)",
+							"bulkCurriculum": "cyclic"
+						},
+						{
+							"title": "API testing with Vitest and Supertest",
+							"bulkCurriculum": "How to test Node/Express API routes with Vitest and Supertest: https://edwardtanguay.vercel.app/howtos?id=686"
+						},
+						{
+							"title": "API with lowdb backend",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Screenscraping API",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "databaseBasics",
+					"title": "Database Basics",
+					"days": [
+						{
+							"title": "SQL/NoSQL Intro and SQLite read-only API",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "SQLite read/write CRUD React/API fullstack site",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "MySQL read-only API",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Postgres read-only API",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "databaseAdvanced",
+					"title": "Database Advanced",
+					"days": [
+						{
+							"title": "MongoDB installation",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "MongoDB query CRUD",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "MongoClient API",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Mongoose API",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "MongoDB Atlas",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Advanced Mongoose II",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Fullstack Applications with MongoDB/Mongoose",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Fullstack Applications with MongoDB/Mongoose",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "security",
+					"title": "Security",
+					"days": [
+						{
+							"title": "Data Validation and Cleansing",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Securing passwords with bcrypt",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Multi-User Authentication with Sessions/Cookies",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Frontend authentication/authorization with React Router",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "User Authentication with JWT",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Uploading Files",
+							"bulkCurriculum": "nnn"
+						},
+						{
+							"title": "Send emails from website with Node Mailer + Assessment",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "deployment",
+					"title": "Deployment",
+					"days": [
+						{
+							"title": "MERN CRUD site deployed at Cyclic/Vercel",
+							"bulkCurriculum": "nnn"
+						}
+					]
+				},
+				{
+					"idCode": "projectWorkshops",
+					"title": "Projects & Workshops",
+					"days": [
+						{
+							"title": "Projects/Workshop: GraphQL",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: NestJS",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Docker",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						},
+						{
+							"title": "Projects/Workshop: Cypress",
+							"bulkCurriculum": "workshop live-coding, work on projects"
+						}
+					]
+				}
+			]
+		},
+		{
+			"orderNumber": 6,
+			"idCode": "fin",
+			"title": "Final Projects",
+			"submodules": [
+				{
+					"idCode": "week1",
+					"title": "Week 1: Ideation Week",
+					"days": [
+						{
+							"title": "Final Project Week 1",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 1",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 1",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 1",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week2",
+					"title": "Week 2: Design Week",
+					"days": [
+						{
+							"title": "Final Project Week 2",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 2",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 2",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 2",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week3",
+					"title": "Week 3: Development Week",
+					"days": [
+						{
+							"title": "Final Project Week 3",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 3",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 3",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 3",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week4",
+					"title": "Week 4: Implementation Week",
+					"days": [
+						{
+							"title": "Final Project Week 4",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 4",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 4",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 4",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week5",
+					"title": "Week 5: Review Week",
+					"days": [
+						{
+							"title": "Final Project Week 5",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 5",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 5",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 5",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week6",
+					"title": "Week 6: Finalization Week",
+					"days": [
+						{
+							"title": "Final Project Week 6",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 6",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 6",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 6",
+							"bulkCurriculum": ""
+						}
+					]
+				},
+				{
+					"idCode": "week7",
+					"title": "Week 7: Presentation Preparation Week",
+					"days": [
+						{
+							"title": "Final Project Week 7",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 7",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 7",
+							"bulkCurriculum": ""
+						},
+						{
+							"title": "Final Project Week 7",
+							"bulkCurriculum": ""
+						}
+					]
+				}
+			]
+		}
+	]
+}

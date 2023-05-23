@@ -17,6 +17,12 @@ body {
 	font-family: sans-serif;
 	padding: $main-padding;
 
+	div.modules {
+		background: navy;
+		margin-bottom: 1rem;
+		padding: 1rem;
+	}
+
 	h1 {
 		margin-bottom: $main-padding;
 	}
