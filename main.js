@@ -1,5 +1,7 @@
 import './style.scss';
 
+const html = ``;
+
 document.querySelector('#app').innerHTML = `
 <h1>Cascading Style Sheets</h1>
 	<section>
